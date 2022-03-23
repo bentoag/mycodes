@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Einstein Store </title>
+        <meta charset="utf-8">
+    </head>
+    <header style="background-color: #ffffffbe; width: 1080px; height: 250px; text-align: center;">
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 50PX; font-style: oblique; color: rgb(19, 19, 236); text-align: center;"> EINSTEIN STORE: A MELHOR LOJA DA GALÁXIA </h1>
+        <br> <br>
+        <nav style="nav-right: auto; position: center;">
+            <ul>
+                <button type="menu" style="background-color: aqua;"> <a href="home.html"> Home </a> </button>
+                <button type="menu" style="background-color: aqua;"> <a href="duvidas.html">Perguntas Frequentes </a> </button>
+                <button type="menu" style="background-color: aqua;"> <a href="contato.html"> Contato </a> </button>
+                <button type="menu" style="background-color: aqua;"> <a href="cadastro.html"> Cadastro </a> </button>          
+            </ul>
+        </nav>             
+    </header>
+    <body style="background-color: #ffffff; width: 1080;"> 
+       
+        <table>
+            <tr>
+                <td>
+                    <figure>
+                        <img src="img/einstein04.jpg" alt="Einstein running"
+                        width="30%" height="30%" title="Einstein running">
+                    </figure>
+                </td>
+                <td style="text-align: left;">
+                    <form>
+                        <label for="qtd"> Selecione a quantidade </label>
+                        <input id="qtd" name="qtd" type="number" placeholder="1" max="10" min="0"> <br><br>
+                        <label for="tamanho"> Selecione um Tamanho: </label> 
+                        <select name="tamanho">
+                            <option value="cadastro"> P </option>
+                            <option value="Pgto"> M </option>
+                            <option value="devolucoes" selected> G </option>
+                            <option value="entrega"> GG </option>
+                            <option value="outros"> XE </option>
+                        </select>
+                        <br> <br>
+                        <button type="submit" style="background-color: chartreuse;"> <b style="color: black;"> Comprar </b></button>
+                        <button type="button" style="background-color: cornflowerblue;"> <a href="home.html"> <b style="color: black;"> Voltar </b> </a></button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+    </body>    
+
+</html>

@@ -1,0 +1,19 @@
+.titulo{
+    text-align: center;
+    color: aqua;
+}
+.col{
+    font-size: 15px;
+    font-style: bold;
+    color: blue;
+}
+button{
+    margin: 0 25px;
+}
+#saudebrasil{
+    text-align: right;
+    font-size: 10px;
+    color: darkgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}

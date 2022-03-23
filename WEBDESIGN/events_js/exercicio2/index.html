@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h2> CALCULADORA: </h2>
+    <h2 id="resultadoDaMedia"></h2>
+    <script type="text/javascript">
+        var nota_1 = prompt("Insira a nota 1: ");
+        var nota_2 = prompt("Insira a nota 2: ");
+        var nota_3 = prompt("Insira a nota 3: ");
+
+        var nota_1_float = parseFloat(nota_1);
+        var nota_2_float = parseFloat(nota_2);
+        var nota_3_float = parseFloat(nota_3);
+
+        var media = (nota_1_float + nota_2_float + nota_3_float)/3
+
+        if(media >= 7.0){
+            document.getElementById('resultadoDaMedia').style.background = 'green';
+        }else{
+            document.getElementById('resultadoDaMedia').style.background = 'red';
+        }
+
+        document.getElementById('resultadoDaMedia').innerHTML = "A média é igual a:  " + media;
+
+        console.log(media);
+		
+    </script>
+</body>
+</html>

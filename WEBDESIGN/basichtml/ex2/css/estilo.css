@@ -1,0 +1,59 @@
+table{
+    border: none;
+    text-align: center;
+}
+td{
+    width: 500px;
+    height: 500px;    
+}
+.titulos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+.autores {
+    font-family: monospace;
+    font-size: 6px;
+    color: cadetblue;
+    text-align: center;
+}
+.descricao{
+    font-family: monospace;
+    font-size: 6px;
+    color: rgb(49, 4, 247);
+    text-align: center;
+}
+.lojista{
+    font-family: monospace;
+    font-size: 6px;
+    color: cadetblue;
+    text-align: center;
+}
+.preco{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+pre{
+    font-family: monospace;
+    font-size: 15px;
+    color: rgb(50, 17, 238);
+    text-align: center;
+    width: 300px;
+}
+button{
+    border-radius: 30%;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    color: rgb(0, 0,0);   
+    font-size: 8px;
+}
+.voltar{
+    background-color: coral;
+}
+.saibamais{
+    background-color: greenyellow;
+}

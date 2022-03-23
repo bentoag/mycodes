@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box; /*desconsidera a largura total da pag ou elementos*/
+    margin: 0px;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+header{
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 5px;
+}
+img{
+    width: 200px;
+}
+.especial{
+    width: 300px;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 10%;
+    vertical-align: middle;
+    color: rgb(0, 0, 0);   
+    background-color: rgb(203, 248, 248);   
+    border: 1px solid rgb(114, 241, 97);  
+}
+nav a:hover{
+    background-color:rgb(220, 240, 217) ;
+    color: rgb(255, 255, 255);
+}
+nav a.active{        
+    color: seagreen;
+    background-color: rgb(114, 241, 97);
+}
+nav{
+    float: right;
+    margin-top: 90px;
+    margin-right: 300px;
+}
+  .coluna1, .coluna2, .coluna3{
+      width: 31.3%;
+      float: left;
+      margin: 1%;
+  }
+  .subcoluna1, .subcoluna2, .subcoluna3{
+    width: 10.1%;
+    float: left;    
+    margin-left: 50px;    
+    }
+.subcoluna1 a{
+    text-decoration: none;
+}
+.subcoluna2 a{
+    text-decoration: none;
+}
+.subcoluna3 a{
+    text-decoration: none;
+}
+.preco{
+    text-align: center;           
+    font-size: 10px;
+    color: tomato; 
+    font-weight: bold;   /*negrito*/ 
+}
+.alinhamentoimagem{
+text-align: center;    
+}
+.escolhatamanho{
+    width: 40px;
+    padding: 5px;
+    text-decoration: none;
+}
+.tamanhologoatomic{
+    width: 60px;
+    padding: 5px;
+    text-decoration: none;
+}
+.descricao{
+    text-align: center;
+    font-size: 8px;
+    color: black;
+    text-decoration: none;
+}
+.descricaoatomic{
+    text-align: center;
+    font-size: 9px;
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.redessociais{
+    width: 100%;
+    padding: 10px;
+    clear: both;
+    
+}
+.redessociais a{
+    text-decoration: none;
+    color: turquoise;
+    text-align: left;
+}
+
+.redessociais .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-decoration: none;
+    border-radius: 50%;
+  }  
+  
+.redessociais .fa-instagram {
+    background: #ce597c;
+    color: white;    
+   
+  }
+
+.redessociais .fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+
+  section{overflow: auto;}
+
+  /*Como realçar os elementos com o mouse em cima?*/
+  .realce a:hover{
+    background-color:rgb(220, 240, 217) ;
+    color: rgb(255, 255, 255);
+}
+.realce a.active{        
+    color: seagreen;
+}
+
+/*Responsividade*/
+  @media screen and (max-width: 500px){
+      header a{
+          float: none;
+          display: block;
+          text-align: center;
+      }
+      nav{
+        float: none;
+      }
+      .coluna1, .coluna2, .coluna3{
+          width: 80%;
+      }
+      .subcoluna1, .subcoluna2, .subcoluna3{
+          width: 10%;
+      }
+      .escolhatamanho, .tamanhologoatomic, .descricao, .descricaoatomic, .redessociais, .fa, .realce{
+          width: 100%;
+      }
+  }
+  
+
+
+

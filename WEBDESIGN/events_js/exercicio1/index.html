@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 1</title>
+    </head>
+    <body>
+        <header>
+           <h1> Cálculo Média </h1> 
+        </header>
+        <section>
+            <label for="nota1"> Inserir 1ª Nota: </label>
+            <input type="number" name="nota1" id="nota_1" value=""><br>
+            <label for="nota1"> Inserir 2ª Nota: </label>
+            <input type="number" name="nota2" id="nota_2" value=""><br>
+            <label for="nota1"> Inserir 3ª Nota: </label>
+            <input type="number" name="nota3" id="nota_3" value="">
+            <br>
+            <br>
+            
+                <input type="hidden" id="valormedia" value="0">
+            
+            <button type="button" onclick="manipulaValores()"> CALCULAR </button>
+            <br>
+            <br>
+            
+            <h3 id="resultadoDaMedia" onmouseout="mudaCor(false)" onmouseover="mudaCor(true)"></h3>
+        </section>         
+       <script src="versaodois.js"></script>
+    </body>
+    
+</html>

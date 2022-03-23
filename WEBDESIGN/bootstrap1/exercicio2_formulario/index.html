@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Formulário com Bootstrap</title>
+    </head>
+    <body>
+        <div class="container">
+           <h1 class="titulo mt-5"> FORMULÁRIO COM BOOTSTRAP</h1>
+           <!-- A classe form-group permite agrupar uma parte de um formulário com uma pequena margem -->
+			<!-- A classe form-row permite criar linhas para separar campos em colunas -->
+           <form>
+               <div class="form-group form-row"> <!-- Criar uma linha com x itens-->
+                    <div class="col"> <!-- Criar uma coluna com um iten especifico-->
+                        <label for="nome"> NOME </label>
+                        <!-- A classe form-control permite usar as funcionalidades de renderização para os diferentes navegadores -->
+                        <input type="text" class="form-control" id="nome" maxlength="20" placeholder="first name">
+                    </div>
+                    <div class="col">
+                        <label for="sobrenome"> SOBRENOME </label>
+                        <input type="text" class="form-control" id="sobrenome" maxlength="30" placeholder="last name">
+                    </div>
+               </div>
+
+               <div class="form-group form-row">
+                   <div class="col">
+                       <label for="email"> E-MAIL </label>
+                       <input type="email" class="form-control" id="email" placeholder="seuemail@provedor">
+                       <small id="emailAjuda" class="form-text text-muted">Seu e-mail é confidencial.</small>
+                   </div>
+                   <div class="col">
+                       <label for="contato"> TELEFONE </label>
+                       <input type="text" class="form-control" id="contato" placeholder="+55 (48) 99999-0000" maxlength="13">
+                       <small id="contatoAjuda" class="form-text text-muted">Seu contato é confidencial.</small>
+                   </div>
+               </div>
+
+               <div class="form-group form-row">
+                   <div class="col">
+                       <label for="regiao"> REGIÃO: </label>
+                       <select id="regiao" class="form-control">
+                           <option value="1" selected > SUL </option>
+                           <option value="2"> SUDESTE </option>
+                           <option value="3"> CENTRO-OESTE </option>
+                           <option value="4"> NORTE </option>
+                           <option value="5"> NORDESTE </option>
+                       </select>
+                   </div>
+                   <div class="col">
+                       <label for="uf"> UF: </label>
+                       <select id="uf" class="form-control">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF" selected>Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                       </select>
+                   </div>                  
+               </div>
+
+               <div class="form-row mt-5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox"  id="checkboxnewsletter">
+                        <label class="form-check-label" for="defaultCheck">
+                            Quero receber newsletter.
+                        </label>
+                     </div>
+                </div>
+
+              <!-- Agrupar os botoes enviar / limpar -->
+              <div class="form-group form-row">
+                  <div class=" col mt-5 btn-group" role="group" aria-label="...">
+                    <div id="botaoenviar">                       
+                        <button type="submit" class="btn btn-success btn-lg"> ENVIAR </button>
+                    </div>
+                    <div id="botaoreset">                      
+                        <button type="reset" class="btn btn-secondary btn-lg "> LIMPAR </button>
+                    </div>
+                  </div class=" col mt-5">
+                    <h4 class="mt-5" id="saudebrasil">OBRIGADO POR SUA PARTICIPAÇÃO @SAUDEBRASIL</h4>
+                    <!-- Apenas pra dividir a área em duas colunas-->
+                  </div>
+              </div>
+                <!--
+                    </div>
+                        btn-lg exibe o botão em um tamanho grande  
+                        btn-block exibe o botão com 100% do tamanho da tela 
+                        <button type="submit" class="btn btn-success btn-lg btn-block mt-4"> ENVIAR </button>
+                    </div>
+                --> 
+           </form>
+
+        <!-- Bibliotecas utilizadas pelo bootstrap: jQuery e Popper, além do JS do próprio bootstrap -->	
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>	
+        
+    </body>
+</html>

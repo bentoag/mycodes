@@ -1,0 +1,23 @@
+.sul{
+    color: purple;    
+    font-style: bold;
+}
+.sudeste{
+    color: blue;
+    font-style: normal;
+}
+.centro-oeste{
+    color: coral;
+    font-style: italic;
+}
+.nordeste{
+    color: red;
+    font-style: normal;
+}
+.norte{
+    color: darkgreen;
+    font-style: oblique;
+}
+.titulo{
+    text-align: center;
+}

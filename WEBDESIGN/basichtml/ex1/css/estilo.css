@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;    
+}
+h1 {
+    color: rgb(7, 250, 250);
+    font-size: 40px;    
+}
+p{
+    color: rgb(24, 219, 24);
+    font-size: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: none;
+    padding: 2px;
+    font-size: 15px; 
+    text-align: left;
+}
+/*tr:nth-child(odd) {background-color: grey}
