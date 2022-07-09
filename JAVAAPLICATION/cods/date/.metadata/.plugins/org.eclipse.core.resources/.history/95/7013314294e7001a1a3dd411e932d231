@@ -1,0 +1,9 @@
+package exerciciodate.bento;
+
+import java.util.Scanner;
+
+public class DateTest {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+	}
+}

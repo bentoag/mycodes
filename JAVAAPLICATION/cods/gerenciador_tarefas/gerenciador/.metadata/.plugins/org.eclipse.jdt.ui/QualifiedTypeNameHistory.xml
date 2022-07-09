@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="gerenciador.bento.Horario"/>
+    <fullyQualifiedTypeName name="gerenciador.bento.Tarefa"/>
+    <fullyQualifiedTypeName name="gerenciador.bento.Mes"/>
+    <fullyQualifiedTypeName name="gerenciador.bento.Data"/>
+</qualifiedTypeNameHistroy>

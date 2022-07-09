@@ -1,0 +1,51 @@
+package healthprofile.bento;
+
+import java.util.Scanner;
+
+public class MyProfile {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner interface = new Scanner(System.in);
+		System.out.println("**** BEM VINDO AO SISTEMA DE CADASTRO DE PERFIL MÉDICO: ****");
+		System.out.println("Digite 1 para Cadastrar  ||  Digite 0 para sair");
+		int opcao = interface.nextInt();
+		
+		if(opcao == 1) {
+			Scanner input = new Scanner(System.in);
+			System.out.print("Digite seu nome:  ");
+			String nome = input.nextLine();
+			System.out.print("Digite seu sobrenome:  ");
+			String sobrenome = input.nextLine();
+			System.out.print("Digite o dia que você nasceu:  ");
+			int dia = input.nextInt();
+			System.out.print("Digite o mês que você nasceu:  ");
+			int mes = input.nextInt();
+			System.out.print("Digite o ano que você nasceu:  ");
+			int ano = input.nextInt();
+			System.out.print("Digite a sua altura (em metros):  ");
+			float altura = input.nextFloat();
+			System.out.print("Digite o seu peso (em quilogramas):  ");
+			float peso = input.nextFloat();
+			
+			HealthProfile user = new HealthProfile(nome, sobrenome, dia, mes, ano, peso, altura);
+			System.out.println("**** MINHAS INFORMAÇÕES ****");
+			System.out.printf("%s %s %s %n%s %d %s","Bem vindo : ", user.getNome(), user.getSobrenome(), "Você tem:  ", user.calculaIdade(), " anos.");
+			System.out.printf("%n%s %s","Sua data de nascimento é:  ", user.getDataNascimento());
+			System.out.printf("%n%s %d %s", "Sua Frequência Cardíaca Máxima deve ser: ", user.frequenciaCardioMax(), " bt/min");
+			System.out.printf("%n%s %s %s", "Sua Frequência Cardíaca Ideal ", user.frequenciaAlvo(), "bt/min");
+			System.out.printf("%n %s %.2f %n", "Seu IMC é igual a: ", user.getIMC());
+			System.out.printf("%n%n%s %n%s %n%s %n%s ", "ABAIXO DO PESO --> IMC < 18,5", "PESO NORMAL--> 18,5 < IMC < 24,9 ", "SOBREPESO --> 25,0 < IMC < 29,9", "OBESIDADE --> IMC > 30,0");
+		}else {
+			System.out.println("OBRIGADO PELA VISITA");
+		}
+		
+		
+		
+		
+		input.close();
+
+	}
+
+}

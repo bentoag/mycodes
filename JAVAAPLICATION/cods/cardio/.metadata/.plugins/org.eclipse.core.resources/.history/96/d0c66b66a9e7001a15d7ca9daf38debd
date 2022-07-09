@@ -1,0 +1,43 @@
+package healthprofile.bento;
+
+import java.util.Scanner;
+
+public class MyProfile {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("**** BEM VINDO AO SISTEMA DE CADASTRO DE PERFIL MÉDICO: ****");
+		System.out.println("Digite 1 para Cadastrar  ||  Digite 0 para sair");
+		int opcao = input.nextInt();
+		
+		if(opcao == 1) {
+			System.out.print("Digite seu nome:  ");
+			String nome = input.nextLine();
+			System.out.print("Digite seu sobrenome:  ");
+			String sobrenome = input.nextLine();
+			System.out.print("Digite o dia que você nasceu:  ");
+			int dia = input.nextInt();
+			System.out.print("Digite o mês que você nasceu:  ");
+			int mes = input.nextInt();
+			System.out.print("Digite o ano que você nasceu:  ");
+			int ano = input.nextInt();
+			System.out.print("Digite a sua altura (em metros):  ");
+			float altura = input.nextFloat();
+			System.out.print("Digite o seu peso (em quilogramas):  ");
+			float peso = input.nextFloat();
+			
+			HealthProfile myprofile = new HealthProfile(nome, sobrenome, dia, mes, ano, peso, altura);
+		}else {
+			System.out.println("OBRIGADO PELA VISITA");
+		}
+		
+		
+		
+		
+		input.close();
+
+	}
+
+}

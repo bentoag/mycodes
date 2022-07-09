@@ -1,0 +1,10 @@
+package livrodenotas.bento;
+
+public class LivroNotas {
+	private String nomeUC;
+	double [][] notas;
+	
+	public LivroNotas (String disciplina) {
+		this.nomeUC = disciplina;
+	}
+}

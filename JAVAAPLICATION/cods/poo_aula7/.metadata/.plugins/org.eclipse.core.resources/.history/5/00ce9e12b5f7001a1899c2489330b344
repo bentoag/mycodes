@@ -1,0 +1,31 @@
+package relogio.bento;
+
+public class TesteHorario {
+
+	public static void main(String[] args) {
+		SegHorario horario1 = new SegHorario();
+		SegHorario horario2 = new SegHorario();
+
+		System.out.printf("Horário 1 inicial é: %s%n", horario1);
+		System.out.printf("Horário 2 inicial é: %s%n", horario2);
+
+		System.out.println();
+
+		horario1.setHorario(12, 27, 6);
+		System.out.printf("Horário 1 alterado para: %s%n", horario1);
+		System.out.printf("Horário 2 permanece: %s%n", horario2);
+
+		System.out.println();
+
+		horario1.setHorario(22, 07, 6);
+		horario2.setHorario(23, 34, 13);		
+		System.out.printf("Horário 1 alterado para: %s%n", horario1);
+		System.out.printf("Horário 2 alterado para: %s%n", horario2);
+		
+		horario2.setHorario(1, 99, 99);
+		horario1.setHorario(-1, -1, -1);
+		System.out.printf("Horário 1 alterado para (valores inválidos): %s%n", horario1);
+		System.out.printf("Horário 2 alterado para (valores inválidos): %s%n", horario2);
+	}
+
+}

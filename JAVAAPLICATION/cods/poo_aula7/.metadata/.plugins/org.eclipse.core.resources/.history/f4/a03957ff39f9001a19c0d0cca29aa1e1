@@ -1,0 +1,16 @@
+package relogio.bento;
+
+public class Relogio {
+	
+	public SegHorario horario_atual;
+	public SegHorario horario_alarme;
+
+	public Relogio(int hora, int minuto, int segundo) {
+	 horario_atual = new SegHorario(hora, minuto, segundo);
+	 }
+	
+	 public String getHorarioAtual() {
+	 return horario_atual.toString();
+	 }
+
+}

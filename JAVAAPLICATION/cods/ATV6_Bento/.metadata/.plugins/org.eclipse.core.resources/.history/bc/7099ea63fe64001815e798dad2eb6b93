@@ -1,0 +1,39 @@
+package Sistema;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public final class Funcionario extends Pessoa {
+
+	private final int CRECI, cod;
+	
+	private final HashSet <TipoFuncionario>  cargo = new HashSet<>();
+	
+	public Funcionario(String nome, String CPF, int creci, int cod) {
+		super(nome, CPF);
+		this.CRECI = creci;
+		this.cod = cod;
+	}
+	
+	public void addCargo(TipoFuncionario tp) {
+		cargo.add(tp);
+	}
+	
+	public HashSet<TipoFuncionario> getCargo() {
+		return cargo;
+	}
+
+	public int getCRECI() {
+		return CRECI;
+	}
+
+	public int getCod() {
+		return cod;
+	}
+
+	@Override
+	public String toString() {
+		return "Funcionário=" + cargo + ",Nome: " + getNome() + ", CPF="
+				+ getCPF() + "Cod. = " + getCod();
+	}
+}

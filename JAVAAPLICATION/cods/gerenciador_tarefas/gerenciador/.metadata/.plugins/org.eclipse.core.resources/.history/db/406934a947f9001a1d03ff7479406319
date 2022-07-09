@@ -1,0 +1,14 @@
+package gerenciador.bento;
+
+public class Tarefa {
+	public String nome;
+	public Data data;
+	public Tarefa (String nome) {
+		this.nome = nome;
+	}
+	
+	public Tarefa (String nome,int dia, int mes, int ano) {
+		this.nome = nome;
+		
+	}
+}

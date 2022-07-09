@@ -1,0 +1,8 @@
+package pizzaria.bento;
+
+public abstract class Pizza {
+
+	private String nome;
+	private Tamanho tamanho;
+	
+}

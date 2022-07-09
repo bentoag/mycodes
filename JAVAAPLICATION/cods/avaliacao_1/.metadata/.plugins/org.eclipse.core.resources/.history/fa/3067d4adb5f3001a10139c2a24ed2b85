@@ -1,0 +1,17 @@
+package prova;
+
+public class main {
+
+	public static void main(String[] args) {
+		String nome = "José";
+		int idade = 28;
+		double salario_liquido = 2630.4597;
+
+		System.out.print("Declarante: ");
+		System.out.println();
+		System.out.printf("%s, %d anos%nSalário líquido: R$ %.2f%n",
+				  nome, idade, salario_liquido);
+
+	}
+
+}

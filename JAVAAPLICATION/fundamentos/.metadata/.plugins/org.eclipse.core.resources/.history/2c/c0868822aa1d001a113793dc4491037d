@@ -1,0 +1,13 @@
+package bento.fundamentosjava.main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Olá, mundo!");
+		System.out.print("Olá, mundo de novo. \n"); // \n é um metacarecter
+		System.out.print("Olá, mundo mais uma vez");
+
+	}
+
+}

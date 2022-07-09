@@ -1,0 +1,10 @@
+package pizzaria.bento;
+
+public class Portuguesa extends Pizza {
+
+	public Portuguesa(String nome, Tamanho tamanho) {
+		super(nome, tamanho);		
+	}
+
+	
+}

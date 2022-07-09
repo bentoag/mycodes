@@ -1,0 +1,5 @@
+package contas_bancarias.bento;
+
+public class ContaInvestimento extends Conta{
+
+}

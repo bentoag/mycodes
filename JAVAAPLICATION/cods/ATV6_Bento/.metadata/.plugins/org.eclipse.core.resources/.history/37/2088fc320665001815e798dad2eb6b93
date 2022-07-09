@@ -1,0 +1,29 @@
+package Sistema;
+
+import java.time.LocalDate;
+
+public class Transacao {
+	
+	private LocalDate dataHora;
+	private String nregistro;
+	private boolean situacao;
+	private Cliente beneficiado, contratante;
+	private Funcionario responsavel;
+	
+	
+	
+	public LocalDate getDataHora() {
+		return dataHora;
+	}
+	public String getNregistro() {
+		return nregistro;
+	}
+	public boolean isSituacao() {
+		return situacao;
+	}
+	
+	
+	
+
+
+}

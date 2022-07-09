@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;abstratos.polimorfismo.bento&apos; to &apos;folhapagamento.bento&apos;&#x0D;&#x0A;- Original project: &apos;FolhaPagamento&apos;&#x0D;&#x0A;- Original element: &apos;FolhaPagamento/src/abstratos.polimorfismo.bento&apos;&#x0D;&#x0A;- Renamed element: &apos;FolhaPagamento/src/folhapagamento.bento&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;abstratos.polimorfismo.bento&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;abstratos.polimorfismo.bento" name="folhapagamento.bento" qualified="false" references="true" stamp="1601590676351" textual="false" version="1.0"/>
+</session>

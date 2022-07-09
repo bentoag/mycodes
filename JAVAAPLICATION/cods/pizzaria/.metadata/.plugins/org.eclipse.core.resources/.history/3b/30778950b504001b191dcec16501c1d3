@@ -1,0 +1,5 @@
+package pizzaria.bento;
+
+public enum Tamanho {
+
+}

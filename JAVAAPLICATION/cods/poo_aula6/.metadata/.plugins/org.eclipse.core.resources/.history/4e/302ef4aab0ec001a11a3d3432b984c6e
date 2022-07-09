@@ -1,0 +1,13 @@
+package baralho.bento;
+
+import java.util.Random;
+
+public class Baralho {
+	private Carta[] deque;
+	 private int cartaTopo;
+	
+	 // constantes da classe
+	 public static final int NUMERO_DE_CARTAS = 52;
+	private static final Random random = new Random();
+
+}

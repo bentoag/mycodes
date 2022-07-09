@@ -1,0 +1,13 @@
+package livrodenotas.bento;
+
+public class Curso {
+
+	public static void main(String[] args) {
+		String nomeUC = "POO";
+		final int numAluno = 5, numAvaliacoes = 2;
+		
+		LivroNotas cadastro = new LivroNotas(nomeUC, numAluno, numAvaliacoes);
+
+	}
+
+}

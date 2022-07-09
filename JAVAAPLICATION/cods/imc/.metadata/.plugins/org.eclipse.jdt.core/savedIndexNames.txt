@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\BackupDrive\TADS SENAI\2SEM\POO\Exercicios\imc\.metadata\.plugins\org.eclipse.jdt.core
+2822998518.index
+1248545562.index

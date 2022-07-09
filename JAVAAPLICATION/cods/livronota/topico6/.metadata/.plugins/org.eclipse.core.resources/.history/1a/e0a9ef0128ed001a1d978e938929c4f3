@@ -1,0 +1,25 @@
+package livrodenotas.bento;
+
+import java.util.Scanner;
+
+public class Tela {
+
+	public static void boasVindas() {
+		System.out.println("Bem vindo a execução do Programa Livro de Notas.!");
+	}
+	
+	public static double pedirNota(int idAluno) {
+		double nota;
+		int aluno = idAluno;
+		Scanner input = new Scanner(System.in);
+		
+		for (int i = 0; i < LivroNotas.numAvaliacoes; i++) {
+			System.out.println("Informe a nota da avaliação " + i +  "do aluno: " + idAluno + ":  ");
+			nota = input.nextDouble();
+			if(nota >=0.0 && nota <=10.0) {
+				aluno.adicionarNota(nota, aluno, i);
+			}
+		}
+		
+	}
+}

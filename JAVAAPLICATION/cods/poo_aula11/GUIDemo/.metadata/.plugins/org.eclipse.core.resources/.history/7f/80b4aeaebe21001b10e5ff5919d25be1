@@ -1,0 +1,6 @@
+package pi_gamemath_gui;
+import javax.swing.JFrame;
+
+public class GUIGameMath {
+
+}

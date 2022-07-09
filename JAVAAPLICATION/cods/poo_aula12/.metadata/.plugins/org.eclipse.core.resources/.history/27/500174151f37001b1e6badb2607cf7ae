@@ -1,0 +1,44 @@
+package model;
+
+public class Categoria {
+	private int id;
+	private String nome;
+	
+	
+	public int getInd() {
+		return id;
+	}
+	public void setInd(int id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	@Override
+	public String toString() {
+		return nome;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if(this == obj) {
+			return true;
+		}
+		
+		if(obj == null) {
+			return false;
+		}
+		
+		if(this.getClass()!= obj.getClass()) {
+			return false;
+		}
+		
+		Categoria categoria = (Categoria) obj;
+		return this.id == categoria.id;		
+	}
+}

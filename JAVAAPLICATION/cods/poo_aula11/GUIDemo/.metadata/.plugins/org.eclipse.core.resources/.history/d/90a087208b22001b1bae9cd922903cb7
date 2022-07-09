@@ -1,0 +1,20 @@
+package pi_gamemath;
+
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+public class PlayerFrame extends PrincipalFrame {
+
+	private GridBagLayout layout;
+	private GridBagConstraints constraints;
+	
+	public PlayerFrame() {
+		super("Jogador");
+		
+		layout = new GridBagLayout();
+		setLayout(layout);
+		constraints = new GridBagConstraints();
+		
+		init();
+	}
+}

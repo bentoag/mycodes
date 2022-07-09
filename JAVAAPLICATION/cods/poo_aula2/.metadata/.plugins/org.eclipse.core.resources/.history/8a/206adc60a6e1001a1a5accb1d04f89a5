@@ -1,0 +1,37 @@
+package bento.poo.aula2;
+
+import java.util.Scanner;
+
+public class MeuBanco {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);	
+
+		System.out.print("Informe o nome do 1º Cliente:  ");
+		String cliente1 = scanner.nextLine();
+		System.out.print("Informe o saldo inicial do 1º Cliente: ");
+		double saldo1 = scanner.nextDouble();
+		
+		Conta conta1 = new Conta(cliente1, saldo1);
+		scanner.nextLine();
+			
+		System.out.print("Informe o nome do 2º Cliente:  ");
+		String cliente2 = scanner.nextLine();
+		System.out.print("Informe o saldo inicial do 2º Cliente: ");
+		double saldo2 = scanner.nextDouble();
+		
+		Conta conta2 = new Conta(cliente2, saldo2);
+		scanner.nextLine();
+		
+		System.out.printf("%nConta1: Nome=%s, Saldo=$ %.2f%n", conta1.getNome(), conta1.getSaldo());
+		System.out.printf("Conta2: Nome=%s, Saldo=$ %.2f%n%n", conta2.getNome(), conta2.getSaldo());
+		
+		//interações sacar e depositar
+		System.out.print("Informe o valor do depósito na conta1: ");
+		double valor1 = scanner.nextDouble();
+		conta1.depositar(valor1);
+		
+		System.out.printf("%nNovo saldo conta1: $ %.2f%n%n",
+		conta1.getSaldo());
+		
+	}
+}

@@ -1,0 +1,91 @@
+package contas_bancarias.bento;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Conta conta1 = new Conta(1234, "Bento",1500);
+		System.out.println(conta1);	
+		System.out.println();
+		conta1.depositar(1234,1300);
+		System.out.println(conta1);
+		System.out.println();
+		conta1.sacar(1234,300);
+		System.out.println(conta1);
+		System.out.println();
+		conta1.sacar(1234,3000);//saldo insuficiente
+		System.out.println(conta1);
+		System.out.println();
+		conta1.sacar(1235,300);//conta inexistente
+		System.out.println(conta1);
+		System.out.println();
+		
+		//Testabdo metodo transferir()
+		Conta conta2 = new Conta(5432, "Maria", 500);
+		System.out.println(conta2);
+		System.out.println();
+		conta1.transferir(1234, 5432, 500);
+		System.out.println(conta1);
+		//System.out.println(conta2);
+		
+	/*
+		//Teste Conta Poupança
+		ContaPoupanca contap = new ContaPoupanca(7890, "Pedro", 300);
+		System.out.println();
+		System.out.println(contap);
+		contap.aplicarRendimento();		
+		System.out.println();
+		System.out.println(contap); //imprimir R$375
+		contap.sacar(7890, 100);
+		System.out.println();
+		System.out.println(contap);//imprimir R$275
+		contap.depositar(7890, 1000);
+		System.out.println();
+		System.out.println(contap);//imprimir R$1275
+		contap.aplicarRendimento();
+		System.out.println();
+		System.out.println(contap);//imprimir R$1593,75
+		
+		//Testes Conta Corrente
+		ContaCorrente contaC = new ContaCorrente(9900, "Coudet", 1000);
+		System.out.println();
+		System.out.println(contaC);
+		contaC.pagarConta(9900, 300);
+		System.out.println();
+		System.out.println(contaC); //saldo de R$700
+		contaC.depositar(9900, 13000);
+		System.out.println();
+		System.out.println(contaC);
+		contaC.sacar(9900, 9750);
+		System.out.println();
+		System.out.println(contaC); //saldo R$3950
+		contaC.cobrarTaxa(9900);
+		System.out.println();
+		System.out.println(contaC); //saldo R$3934.50
+		contaC.cobrarTaxa(9900);
+		System.out.println();
+		System.out.println(contaC); //saldo R$3919
+		
+		//Teste Conta Investimento
+		ContaInvestimento contaI = new ContaInvestimento(7777, "Gabriela", 10000);
+		System.out.println();
+		System.out.println(contaI);
+		contaI.aplicarRendimento();
+		System.out.println();
+		System.out.println(contaI); //13K
+		contaI.cobrarImpostoAnual();
+		System.out.println();
+		System.out.println(contaI); //9425
+		contaI.sacar(7777, 425);
+		System.out.println();
+		System.out.println(contaI); //9000
+		contaI.depositar(7777, -1);
+		System.out.println();
+		System.out.println(contaI); //9000
+		contaI.depositar(7777, 1);
+		System.out.println();
+		System.out.println(contaI); //9001
+		
+		*/
+	}
+
+}

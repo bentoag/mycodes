@@ -1,0 +1,75 @@
+package exerciciodate.bento;
+
+public class Date {
+	private int mes, dia, ano;
+
+	public Date(int mes, int dia, int ano) {
+		if (mes > 0 && mes < 13) {
+			if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
+				if (dia > 0 && dia <= 31) {
+					this.ano = ano;
+					this.dia = dia;
+					this.mes = mes;
+				}else {
+					mensagemErro();
+				}
+			} else if (((ano % 4) == 0 && (ano % 100) != 0) && mes == 2) {
+				if (dia > 0 && dia <= 29) {
+					this.ano = ano;
+					this.dia = dia;
+					this.mes = mes;
+				}else {
+					mensagemErro();
+				}
+			} else if (mes == 2) {
+				if (dia > 0 && dia <= 28) {
+					this.ano = ano;
+					this.dia = dia;
+					this.mes = mes;
+				}else {
+					mensagemErro();
+				}
+			} else {
+				if (dia > 0 && dia <= 30) {
+					this.ano = ano;
+					this.dia = dia;
+					this.mes = mes;
+				}else {
+					mensagemErro();
+				}
+			}
+		} else {
+			mensagemErro();
+		}
+	}
+	
+	public String mensagemErro() {
+		return "Parâmetro inválido";
+	}
+
+	public int getMes() {
+		return this.mes;
+	}
+
+	public void setMes(int mes) {
+		this.mes = mes;
+	}
+
+	public int getDia() {
+		return this.dia;
+	}
+
+	public void setDia(int dia) {
+		this.dia = dia;
+	}
+
+	public int getAno() {
+		return this.ano;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+	
+	
+}

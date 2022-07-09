@@ -1,0 +1,9 @@
+package contas_bancarias.bento;
+
+public class ContaCorrente extends Conta{
+
+	public ContaCorrente(int numConta, String cliente, double saldoConta) {
+		super(numConta, cliente, saldoConta);		
+	}
+
+}

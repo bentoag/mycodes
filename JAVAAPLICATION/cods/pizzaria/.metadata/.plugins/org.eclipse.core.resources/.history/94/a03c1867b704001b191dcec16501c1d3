@@ -1,0 +1,22 @@
+package pizzaria.bento;
+
+public abstract class Pizza {
+
+	private String nome;
+	private Tamanho tamanho;
+	
+	public Pizza (String nome, Tamanho tamanho) {
+		fazerPedido(nome, tamanho);
+	}
+
+	public abstract void fazerPedido(String nome, Tamanho tamanho);	
+	public abstract void preparar();
+	public abstract void assar();
+	
+	public void cortar() {
+		if(tamanho == Tamanho.BROTO) {
+			System.out.println(String.format("%s %d %s", "Sua pizza tem ", tamanho.getNumFatias(), " fatias"));
+		}
+	}
+	
+}

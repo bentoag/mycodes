@@ -1,0 +1,11 @@
+package calculandovendasecomissoes.bento;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int[][] meuArray = { { 1, 2 }, { 3, 4 } };
+		System.out.println(meuArray[0][1]); 
+		System.out.println(meuArray[1][0]);
+	}
+
+}

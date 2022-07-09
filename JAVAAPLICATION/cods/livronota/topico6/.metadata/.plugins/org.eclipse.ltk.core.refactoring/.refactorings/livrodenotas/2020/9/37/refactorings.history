@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;valido&apos; in &apos;livrodenotas.bento.Tela.pedirNota(...)&apos; to &apos;qualquer&apos;&#x0D;&#x0A;- Original project: &apos;livrodenotas&apos;&#x0D;&#x0A;- Original element: &apos;livrodenotas.bento.Tela.pedirNota(int).valido&apos;&#x0D;&#x0A;- Renamed element: &apos;valido&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;valido&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;livrodenotas.bento{Tela.java[Tela~pedirNota~I@valido!1254!1275!1262!1267!Z!0!false" name="qualquer" references="true" stamp="1599487248725" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package calculadoracardiaca.bento;
+
+import java.util.Date;
+
+public class HeartRates {
+	private String nome, sobrenome;
+	private int dia, mes, ano;
+	private Date dataNasc;
+}

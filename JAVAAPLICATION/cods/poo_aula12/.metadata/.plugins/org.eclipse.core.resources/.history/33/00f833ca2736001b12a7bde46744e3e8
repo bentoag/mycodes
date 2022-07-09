@@ -1,0 +1,140 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+public class DataBase {
+	
+
+
+	
+	public static boolean inserir(Tarefa tarefa){
+		final String query = "INSERT INTO tarefa (nome, descricao) VALUES (?, ?)";
+		
+		Connection conexao = null;
+		PreparedStatement statement = null;
+		
+		try {
+			conexao = ConectionFactory.getConnection();
+			statement = conexao.prepareStatement(query);
+			statement.setString(1, tarefa.getNome());
+			statement.setString(2, tarefa.getDescricao());
+			statement.execute();
+		}catch (SQLException e){
+			e.printStackTrace(); //imprime um rastreamento do erro
+			return false;
+		} finally {			
+			try {
+				if(statement != null) {
+					statement.close();
+				}
+			} catch (SQLException e) {					
+				e.printStackTrace();
+				return false;
+			}
+		}
+		
+		return true;
+	
+	}
+	
+	public static boolean atualizar(Tarefa tarefa) {
+		
+		final String query = "UPDATE tarefa SET nome = ?, descricao = ? WHERE id = ?";
+		
+		Connection conexao = null;
+		PreparedStatement statement = null;
+		
+		try {
+			conexao = ConectionFactory.getConnection();
+			statement = conexao.prepareStatement(query);
+			statement.setString(1, tarefa.getNome());
+			statement.setString(2, tarefa.getDescricao());
+			statement.setInt(3, tarefa.getId());
+			statement.execute();
+		}catch (SQLException e){
+			e.printStackTrace(); //imprime um rastreamento do erro
+			return false;
+		} finally {			
+			try {
+				if(statement != null) {
+					statement.close();
+				}
+			} catch (SQLException e) {					
+				e.printStackTrace();
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
+	public static boolean remover (Tarefa tarefa) {
+		
+		final String query = "DELETE FROM tarefa WHERE id = ?";
+		
+		Connection conexao = null;
+		PreparedStatement statement = null;
+		
+		try {
+			conexao = ConectionFactory.getConnection();
+			statement = conexao.prepareStatement(query);
+			statement.setInt(1, tarefa.getId());		
+			statement.execute();
+		}catch (SQLException e){
+			e.printStackTrace(); //imprime um rastreamento do erro
+			return false;
+		} finally {			
+			try {
+				if(statement != null) {
+					statement.close();
+				}
+			} catch (SQLException e) {					
+				e.printStackTrace();
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
+	public static List<Tarefa> listar() {
+		List<Tarefa> tarefas = new ArrayList<>();
+		final String query = "SELECT * FROM tarefa ORDER BY id";
+		
+		Connection conexao = null;
+		Statement statement = null;
+		ResultSet resultset = null;
+		
+		try {
+		 conexao = ConectionFactory.getConnection();
+		 statement = conexao.createStatement();
+		 resultset = statement.executeQuery(query);
+		 
+		 while(resultset.next()) {
+			 Tarefa tarefa = new Tarefa();
+			 tarefa.setId(resultset.getInt("Id"));
+			 tarefa.setNome(resultset.getString("Nome"));
+			 tarefa.setDescricao(resultset.getString("Descricao"));
+			 
+			 tarefas.add(tarefa);
+		 }
+		} catch (SQLException e) {			
+			e.printStackTrace();
+		} finally {
+			try {
+				if(resultset != null) {
+					resultset.close();
+				}
+				
+			}catch (SQLException e)
+		}
+		
+		return tarefas;
+	}
+}//fim da classe DataBase

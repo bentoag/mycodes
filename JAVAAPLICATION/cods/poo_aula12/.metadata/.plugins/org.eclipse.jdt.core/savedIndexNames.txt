@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\BackupDrive\TADS SENAI\2SEM\POO\cods\poo_aula12\.metadata\.plugins\org.eclipse.jdt.core
+1248545562.index
+181214803.index
+1425908412.index

@@ -1,0 +1,20 @@
+package condicionais.livronotas;
+
+import java.util.Scanner;
+public class LivroNotas {
+
+	private String  nomeUC;
+	
+	public LivroNotas (String nomeUC) {
+		this.nomeUC = nomeUC;
+	}
+	
+	public String getNomeUC() {
+		return this.nomeUC;
+	}	
+	
+	public void exibirMensagem() {
+		System.out.printf("Bem-vindo(a) a UC \"%s\"!%n%n", getNomeUC());
+	}
+	
+}

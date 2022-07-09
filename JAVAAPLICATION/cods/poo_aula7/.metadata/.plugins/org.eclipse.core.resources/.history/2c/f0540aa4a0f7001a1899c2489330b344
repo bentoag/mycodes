@@ -1,0 +1,17 @@
+package relogio.bento;
+
+public class Horario {
+	
+	private int hora; // 0 - 23
+	private int minuto; // 0 - 59
+	private int segundo; // 0 - 59
+	
+	public void setHora(int hora) {
+	 this.hora = (hora >= 0 && hora <= 23 ? hora : 0);
+	}
+	
+	public int getHora() {
+	 return this.hora;
+	}
+
+}

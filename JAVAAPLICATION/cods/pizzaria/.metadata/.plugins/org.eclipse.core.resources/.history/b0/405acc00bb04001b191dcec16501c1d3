@@ -1,0 +1,29 @@
+package pizzaria.bento;
+
+import java.util.ArrayList;
+
+public class Pepperoni extends Pizza {
+
+	private final int NUMINGREDIENTES = 5;
+	String ingredientes []= {"Molho tomate", "Queijo", "Peperoni", "Tomate", "Orégano"};
+	public Pepperoni(String nome, Tamanho tamanho) {
+		super(nome, tamanho);		
+	}
+
+	@Override
+	public void fazerPedido(String nome, Tamanho tamanho) {		
+		System.out.println("Seu pedido está feito");
+		preparar();
+	}
+
+	@Override
+	public void preparar() {		
+		
+	}
+
+	@Override
+	public void assar() {		
+		
+	}
+
+}

@@ -1,0 +1,58 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class DataBase {
+	
+
+
+	
+	public static boolean inserir(Tarefa tarefa){
+		final String query = "INSERT INTO tarefa (nome, descricao) VALUES (?, ?)";
+		
+		Connection conexao = null;
+		PreparedStatement statement = null;
+		
+		try {
+			conexao = ConectionFactory.getConnection();
+			statement = conexao.prepareStatement(query);
+			statement.setString(1, tarefa.getNome());
+			statement.setString(2, tarefa.getDescricao());
+			statement.execute();
+		}catch (SQLException e){
+			e.printStackTrace(); //imprime um rastreamento do erro
+			return false;
+		} finally {			
+			try {
+				if(statement != null) {
+					statement.close();
+				}
+			} catch (SQLException e) {					
+				e.printStackTrace();
+				return false;
+			}
+		}
+		
+		return true;
+	
+	}
+	
+	public static void atualizar(Tarefa tarefa) {
+		int i = tarefas.indexOf(tarefa); //retorna o indice dessa tarefa
+		if(i >= 0) {
+			tarefas.set(i, tarefa);
+		}
+	}
+	
+	public static void remover (Tarefa tarefa) {
+		tarefas.remove(tarefa);
+	}
+	
+	public static List<Tarefa> listar() {
+		return tarefas;
+	}
+}//fim da classe DataBase

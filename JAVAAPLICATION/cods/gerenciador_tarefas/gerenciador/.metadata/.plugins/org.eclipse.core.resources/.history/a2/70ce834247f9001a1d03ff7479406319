@@ -1,0 +1,9 @@
+package gerenciador.bento;
+
+public class Tarefa {
+	String nome;
+	
+	public Tarefa (String nome) {
+		this.nome = nome;
+	}
+}

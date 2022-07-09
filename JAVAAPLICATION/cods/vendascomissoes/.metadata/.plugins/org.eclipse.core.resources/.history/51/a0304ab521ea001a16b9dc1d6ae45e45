@@ -1,0 +1,30 @@
+package calculandovendasecomissoes.bento;
+
+public class Vendedor {
+	private String nome;
+	private double totalVendidoMes;	
+	private double valorProduto;
+	
+	public Vendedor (String nome) {
+		this.nome = nome;
+	}
+
+	public double getTotalVendidoMes() {
+		return this.totalVendidoMes;
+	}
+	
+	public double salarioVendedor (int tipProduto, int quantidade) {
+		if(tipProduto == 1) {
+			this.valorProduto = 2.98;	
+			this.totalVendidoMes = valorProduto*quantidade;
+			return (1045 + (this.totalVendidoMes*0.05));
+		}
+		return 0;
+	}
+	public void setTotalVendidoMes(double totalVendas) {
+		if(totalVendas > 0 ) {
+			this.totalVendidoMes = totalVendas;
+		}		
+	}	
+	
+}

@@ -1,0 +1,18 @@
+public class ImproperFractionException extends ArithmeticException {
+
+	public ImproperFractionException () {
+		super();
+	}
+	
+	public ImproperFractionException (String message) {
+		super(message);
+	}
+	public ImproperFractionException(Throwable throwable) {
+		super(throwable);
+	}
+	
+	public ImproperFractionException(String message, Throwable throwable) {
+		super(message, throwable);
+	}
+	
+}

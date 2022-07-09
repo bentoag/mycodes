@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\BackupDrive\TADS SENAI\2SEM\POO\Exercicios\cardio\.metadata\.plugins\org.eclipse.jdt.core
+3502227708.index
+2822998518.index
+1248545562.index
+2444743694.index
+201566226.index

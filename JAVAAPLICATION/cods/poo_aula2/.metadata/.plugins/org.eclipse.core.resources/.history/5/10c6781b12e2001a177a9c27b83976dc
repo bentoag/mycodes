@@ -1,0 +1,56 @@
+package bento.poo.empregado;
+
+import java.util.Scanner;
+
+public class Empresa {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		// solicitando informacoes empregado 1
+		System.out.print("Informe o nome do 1º Empregado:  ");
+		String nome1 = scanner.nextLine();
+		System.out.print("Informe o sobrenome do 1º Empregado:  ");
+		String sobrenome1 = scanner.nextLine();
+		System.out.print("Informe o salario do 1º Empregado:  ");
+		double salario1 = scanner.nextDouble();
+
+		// instanciando, criando, empregado 1
+		Empregado empregado1 = new Empregado(nome1, sobrenome1, salario1);
+		scanner.nextLine();
+		System.out.println();
+		// solicitando informacoes empregado 2
+		System.out.print("Informe o nome do 2º Empregado:  ");
+		String nome2 = scanner.nextLine();
+		System.out.print("Informe o sobrenome do 2º Empregado:  ");
+		String sobrenome2 = scanner.nextLine();
+		System.out.print("Informe o salario do 2º Empregado:  ");
+		double salario2 = scanner.nextDouble();
+
+		// instanciando, criando, empregado 2
+		Empregado empregado2 = new Empregado(nome2, sobrenome2, salario2);
+		scanner.nextLine();
+
+		System.out.printf("Empregado 1: %s %s Salario: R$  %.2f %n", empregado1.getNome(), empregado1.getSobrenome(),
+				empregado1.getSalario());		
+		System.out.printf("Empregado 2: %s %s Salario: R$  %.2f %n", empregado2.getNome(), empregado2.getSobrenome(),
+				empregado2.getSalario());		
+		System.out.println("**Verificando o salario anual**");
+		System.out.printf("Empregado 1: %s %s Salario Anual: R$  %.2f \n\n", empregado1.getNome(), empregado1.getSobrenome(),
+				empregado1.getSalarioAnual());
+
+		System.out.print("Informe o aumento do 1º Empregado:  ");
+		float aumento1 = scanner.nextFloat();
+		empregado1.darAumento(aumento1);
+		System.out.println("***Aumento 1: Informado***");
+		System.out.printf("Empregado 1: %s %s Salario: R$  %.2f \n", empregado1.getNome(), empregado1.getSobrenome(),
+				empregado1.getSalario());
+		empregado1.darAumento(10);		
+		System.out.println("***Aumento 2: 10%***");
+		System.out.printf("Empregado 1: %s %s Salario: R$  %.2f \n", empregado1.getNome(), empregado1.getSobrenome(),
+				empregado1.getSalario());
+
+	}
+
+}

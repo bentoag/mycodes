@@ -1,0 +1,18 @@
+package livrodenotas.bento;
+
+public class Curso {
+
+	public static void main(String[] args) {
+		String nomeUC = "POO";
+		final int numAluno = 5, numAvaliacoes = 2;
+		
+		LivroNotas livronota = new LivroNotas(nomeUC, numAluno, numAvaliacoes);		
+		
+		Tela.boasVindas();
+		Tela.pedirNota(0);
+		livronota.calcularMediaPorAluno(0);
+		
+
+	}
+
+}

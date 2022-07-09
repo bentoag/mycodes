@@ -1,0 +1,47 @@
+package livrodenotas.bento;
+
+import java.util.Scanner;
+
+public class Tela {
+
+	static Scanner input = new Scanner(System.in);
+
+	public static void boasVindas() {
+		System.out.println("Bem vindo a execução do Programa Livro de Notas!");
+		System.out.println();
+	}
+
+	public static double pedirNota(int idAluno) {
+
+		double nota = 0, entrada;
+		
+		System.out.printf("%n%s %d %s", "A nota do aluno ", idAluno, " :  ");
+		entrada = input.nextDouble();	
+		
+		if(entrada>=0 && entrada <=10) {
+			nota= entrada;
+		}else {
+			pedirNota(idAluno);
+		}
+		return nota;
+		
+	}
+
+	public static void imprimeMedias(double[][] medias, String nomeUC) {
+
+		System.out.println("Médias da UC: " + nomeUC);
+		for (int i = 0; i < medias.length; i++) {
+			System.out.println(medias[i][0]);
+		}
+	}
+
+	public static void imprimeMedia(double media, String nomeUC, int idAluno) {
+		System.out.println("Média do aluno  " + idAluno +  " na UC, " + nomeUC);
+		imprimeMedia(media, idAluno);
+	}
+
+	private static void imprimeMedia(double media, int idAluno) {
+		System.out.printf("%n%s %d %s %s %.2f" ,"Aluno ", idAluno," - " , "  média igual: ",  media);
+	}
+
+}

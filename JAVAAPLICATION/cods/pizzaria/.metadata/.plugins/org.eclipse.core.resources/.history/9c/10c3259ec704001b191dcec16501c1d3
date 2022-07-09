@@ -1,0 +1,31 @@
+package pizzaria.bento;
+
+public class Portuguesa extends Pizza {
+
+	final int NUMINGREDIENTES = 7;
+	String ingredientes[] = { "Molho tomate", "Mussarela", "Tomate", "Ovos cozidos", "Pressunto", "Cebola em fatias",
+			"Azeitonas" };
+
+	public Portuguesa(String nome, Tamanho tamanho) {
+		super(nome, tamanho);
+	}
+
+	@Override
+	public void fazerPedido() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void preparar() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void assar() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

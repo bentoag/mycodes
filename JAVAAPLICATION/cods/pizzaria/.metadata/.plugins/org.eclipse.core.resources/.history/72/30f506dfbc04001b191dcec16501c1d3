@@ -1,0 +1,36 @@
+package pizzaria.bento;
+
+public class Pepperoni extends Pizza {
+	final int NUMINGREDIENTES = 5;
+	String ingredientes []= {"Molho tomate", "Queijo", "Peperoni", "Tomate", "Orégano"};
+	
+	public Pepperoni(String nome, Tamanho tamanho) {
+		super(nome, tamanho);		
+	}
+
+	@Override
+	public void fazerPedido(String nome, Tamanho tamanho) {		
+		System.out.println("Seu pedido está sendo preparado");
+		preparar();
+	}
+
+	@Override
+	public void preparar() {		
+		for (int i = 0; i < NUMINGREDIENTES; i++) {
+			System.out.println(String.format("%s %s", "Estamos adicionando: ", ingredientes[i]));
+			System.out.println();			
+		}
+		assar();
+	}
+
+	@Override
+	public void assar() {		
+		System.out.println("Sua pizza de Pepperoni ficará pronta em 9 min");
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("%s%s%s%d%s", "Você escolheu a pizza de: ", super.getNome(), " com ", super.getTamanho(), " fatias.");
+	}
+
+}

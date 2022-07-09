@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;pizzaria.bento.Pizza.nome&apos; in &apos;pizzaria.bento.Pizza&apos;&#x0D;&#x0A;- Original project: &apos;Pizzaria&apos;&#x0D;&#x0A;- Original element: &apos;pizzaria.bento.Pizza.nome&apos;&#x0D;&#x0A;- Getter method name: &apos;getNome&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;nome&apos;" flags="589830" getter="getNome" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;pizzaria.bento{Pizza.java[Pizza^nome" insertion="4" stamp="1601647270961" version="1.0" visibility="1"/>
+</session>

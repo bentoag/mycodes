@@ -1,0 +1,35 @@
+package contas_bancarias.bento;
+
+public class ContaPoupanca extends Conta{
+	
+	private double saldoPoupanca;
+
+	public ContaPoupanca(int numConta, String cliente, double saldoConta) {
+		super(numConta, cliente);
+		setSaldoPoupanca(saldoConta);
+	}
+	
+	public double getSaldoPoupanca() {
+		return saldoPoupanca;
+	}
+
+
+
+	public void setSaldoPoupanca(double saldoPoupanca) {
+		this.saldoPoupanca = saldoPoupanca;
+	}
+
+	void aplicarRendimento() {
+		double saldo = getSaldo();
+		double rendimento = 0;
+		rendimento += saldo*0.25;
+		
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("%s %d %n%s%s %n%s%.2f","Nº Conta: ",getNumDaConta(),"Cliente: ",  getCliente(), "Saldo : R$ ", getSaldo());
+	}
+
+
+}

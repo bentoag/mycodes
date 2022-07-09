@@ -1,0 +1,17 @@
+package pizzaria.bento;
+
+public class Pedidos {
+
+	public static void main(String[] args) {
+		Tamanho grande = Tamanho.GRANDE;
+		Tamanho pequena = Tamanho.BROTO;
+		Tamanho familia = Tamanho.GRANDE;
+		Tamanho galera = Tamanho.GIGANTE;
+		
+		Pepperoni pepperoni = new Pepperoni("PEPPERONI", grande);
+		pepperoni.fazerPedido();
+		System.out.println();
+
+	}
+
+}

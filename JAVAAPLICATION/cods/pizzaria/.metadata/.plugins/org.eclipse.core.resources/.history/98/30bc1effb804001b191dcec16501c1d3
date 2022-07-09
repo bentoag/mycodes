@@ -1,0 +1,9 @@
+package pizzaria.bento;
+
+public class Mussarela extends Pizza{
+
+	public Mussarela(String nome, Tamanho tamanho) {
+		super(nome, tamanho);
+	}
+
+}

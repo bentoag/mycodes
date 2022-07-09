@@ -1,0 +1,47 @@
+package relogio.bento;
+
+public class SegHorario {
+
+	private int segundos;
+
+	public int getHora() {
+		int h = this.segundos / 3600;
+		return h;
+	}
+
+	public int getMinuto() {
+		int min = (this.segundos % 3600) / 60;
+		return min;
+	}
+
+	public int getSegundo() {
+		int seg = (this.segundos % 3600) % 60;
+		return seg;
+	}
+
+	public void setHorario(int hora, int minuto, int segundo) {
+		setHora(hora);
+		setMinuto(minuto);
+		setSegundo(segundo);
+	}
+
+	public void setHora(int hora) {
+		int hour = (hora >= 0 && hora <= 23 ? hora : 0);
+
+		this.segundos += (hour - getHora())*3600;
+	}
+
+	public void setMinuto(int minuto) {
+		int min = (minuto >= 0 && minuto <= 59 ? minuto : 0);
+		this.segundos += (min - getMinuto()) * 60;
+	}
+
+	public void setSegundo(int segundo) {
+		int seg = (segundo >= 0 && segundo <= 59 ? segundo : 0);
+		this.segundos += (seg - getSegundo());
+	}
+
+	public String toString() {
+		return String.format("%02d:%02d:%02d", getHora(), getMinuto(), getSegundo());
+	}
+}

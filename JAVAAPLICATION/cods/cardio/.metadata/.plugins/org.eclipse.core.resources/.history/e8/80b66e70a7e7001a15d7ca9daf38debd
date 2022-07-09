@@ -1,0 +1,62 @@
+package healthprofile.bento;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class HealthProfile {
+
+	private String nome, sobrenome;
+	private float altura, peso;
+	private int diaNasc, mesNasc, anoNasc;
+	private int idade;
+		
+	
+	public HealthProfile (String nome, String sobrenome, int dia, int mes, int ano, float peso, float altura) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.diaNasc = dia;
+		this.mesNasc = mes;
+		this.anoNasc = ano;		
+		this.peso = peso;
+		this.altura = altura;
+		this.idade = calculaIdade();
+		
+	}
+	
+	public String getDataNascimento() {
+		return this.diaNasc + "/" + this.mesNasc + "/" + this.anoNasc;
+	}
+	
+	public int calculaIdade() {
+		int anoNasc = this.anoNasc;
+		int mesNasc = this.mesNasc;
+		int diaNasc = this.diaNasc;
+		
+		Calendar agora = GregorianCalendar.getInstance();
+		int anoatual = agora.get(Calendar.YEAR);	
+		int mesatual = agora.get(Calendar.MONTH);
+		int diaatual = agora.get(Calendar.DAY_OF_MONTH);
+		int idade = anoatual - anoNasc;
+		
+		if(mesatual < mesNasc) {
+			idade--;
+		}else {
+			if(diaatual < diaNasc) {
+				idade--;
+			}
+		}
+		
+		return idade;
+	}
+	
+	public int frequenciaCardioMax () {		
+		int frequenciaMax = 220 - this.idade;
+		return frequenciaMax;
+	}
+	public String frequenciaAlvo() {
+		int frequenciaAlvoMax = (int) (frequenciaCardioMax()*0.85);
+		int frequenciaAlvoMin = (int)(frequenciaCardioMax()*0.50);
+		
+		return "deve estar entre:  " + frequenciaAlvoMin + " e " + frequenciaAlvoMax;	
+	}
+}

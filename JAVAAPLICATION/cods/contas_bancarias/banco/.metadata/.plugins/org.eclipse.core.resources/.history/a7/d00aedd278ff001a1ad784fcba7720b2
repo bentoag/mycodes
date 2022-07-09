@@ -1,0 +1,54 @@
+package contas_bancarias.bento;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Conta conta1 = new Conta(1234, "Bento",1500);
+		System.out.println(conta1);	
+		System.out.println();
+		conta1.depositar(1234,1300);
+		System.out.println(conta1);
+		System.out.println();
+		conta1.sacar(1234,300);
+		System.out.println(conta1);
+		System.out.println();
+		conta1.sacar(1234,3000);//saldo insuficiente
+		System.out.println(conta1);
+		System.out.println();
+		conta1.sacar(1235,300);//conta inexistente
+		System.out.println(conta1);
+		System.out.println();
+		
+		Conta conta2 = new Conta(5432, "Maria", 500);
+		System.out.println(conta2);
+		System.out.println();
+		conta1.transferir(1234, 5432, 500);
+		System.out.println(conta1);
+		System.out.println(conta2);
+		
+		//Teste Conta Poupança
+		ContaPoupanca contap = new ContaPoupanca(7890, "Pedro", 300);
+		System.out.println();
+		System.out.println(contap);
+		contap.aplicarRendimento();		
+		System.out.println();
+		System.out.println(contap); //imprimir R$375
+		contap.sacar(7890, 100);
+		System.out.println();
+		System.out.println(contap);//imprimir R$275
+		contap.depositar(7890, 1000);
+		System.out.println();
+		System.out.println(contap);//imprimir R$1275
+		contap.aplicarRendimento();
+		System.out.println();
+		System.out.println(contap);//imprimir R$1593,75
+		
+		//Testes Conta Corrente
+		ContaCorrente contaC = new ContaCorrente(9900, "Coudet", 1000);
+		System.out.println();
+		System.out.println(contaC);
+		contaC.pagarConta(9900, 300);
+		System.out.println();
+	}
+
+}

@@ -1,0 +1,33 @@
+package pizzaria.bento;
+
+public abstract class Pizza {
+
+	private String nome;
+	private Tamanho tamanho;
+	
+	public Pizza (String nome, Tamanho tamanho) {
+		fazerPedido(nome, tamanho);
+	}
+	
+	public String getNome() {
+		return this.nome;
+	}	
+	public void cortar() {
+		if(tamanho == Tamanho.BROTO) {
+			System.out.println(String.format("%s %d %s", "A nossa pizza Broto tem ", tamanho.getNumFatias(), " fatias"));
+		}else if(tamanho == Tamanho.MEDIA) {
+			System.out.println(String.format("%s %d %s", "A nossa pizza Média tem ", tamanho.getNumFatias(), " fatias"));
+		}else if( tamanho == Tamanho.GRANDE) {
+			System.out.println(String.format("%s %d %s", "A nossa pizza Grande tem ", tamanho.getNumFatias(), " fatias"));
+		}else {
+			System.out.println(String.format("%s %d %s", "A nossa pizza Gigante tem ", tamanho.getNumFatias(), " fatias"));
+		}
+	}
+	
+	public abstract void fazerPedido(String nome, Tamanho tamanho);	
+	public abstract void preparar();
+	public abstract void assar();
+
+	
+	
+}

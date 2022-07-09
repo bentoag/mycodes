@@ -1,0 +1,29 @@
+package calculadoracardiaca.bento;
+
+import java.util.Scanner;
+
+public class MinhaFrequencia {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Digite seu nome:  ");
+		String nome = input.nextLine();
+		System.out.print("Digite seu sobrenome:  ");
+		String sobrenome = input.nextLine();
+		System.out.print("Digite o dia que você nasceu:  ");
+		int dia = input.nextInt();
+		System.out.print("Digite o mês que você nasceu:  ");
+		int mes = input.nextInt();
+		System.out.print("Digite o ano que você nasceu:  ");
+		int ano = input.nextInt();
+		
+		
+		
+		
+		input.close();
+
+
+	}
+
+}

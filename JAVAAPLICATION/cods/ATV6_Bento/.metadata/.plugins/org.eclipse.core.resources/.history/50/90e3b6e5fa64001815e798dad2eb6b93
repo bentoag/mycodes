@@ -1,0 +1,19 @@
+package Sistema;
+
+public abstract class Pessoa {
+
+	private final String nome, cpf;
+	
+	protected Pessoa(String nome, String CPF) {
+		this.nome = nome;
+		this.cpf = CPF;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getCPF() {
+		return cpf;
+	}
+}

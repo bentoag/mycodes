@@ -1,0 +1,23 @@
+package pizzaria.bento;
+
+public class Pedidos {
+
+	public static void main(String[] args) {
+		Tamanho casal = Tamanho.MEDIA;
+		Tamanho pequena = Tamanho.BROTO;
+		Tamanho familia = Tamanho.GRANDE;
+		Tamanho galera = Tamanho.GIGANTE;
+		
+		Pepperoni pepperoni = new Pepperoni("PEPPERONI", casal);
+		pepperoni.fazerPedido();
+		System.out.println();
+		
+		Margherita margherita = new Margherita("Margherita", pequena);
+		margherita.fazerPedido();
+		System.out.println();
+		
+		Mussarela mussarela = new Mussarela("Mussarela", familia);
+
+	}
+
+}

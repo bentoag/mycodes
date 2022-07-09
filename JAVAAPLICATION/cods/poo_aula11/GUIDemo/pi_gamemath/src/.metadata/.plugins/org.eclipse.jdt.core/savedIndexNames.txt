@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\BackupDrive\TADS SENAI\2SEM\POO\cods\poo_aula11\GUIDemo\pi_gamemath\src\.metadata\.plugins\org.eclipse.jdt.core
+1248545562.index
+1067094681.index
+2796286743.index

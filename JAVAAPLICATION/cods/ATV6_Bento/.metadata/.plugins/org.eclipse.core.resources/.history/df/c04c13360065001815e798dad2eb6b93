@@ -1,0 +1,21 @@
+package Sistema;
+
+import java.util.HashSet;
+
+public final class Cliente extends Pessoa{
+	
+	private final HashSet <TipoCliente>  especificacao = new HashSet<>();
+
+	public Cliente(String nome, String CPF) {
+		super(nome, CPF);		
+	}
+
+	public void addCliente(TipoCliente esp) {
+		especificacao.add(esp);
+	}
+	
+	public HashSet<TipoCliente> getEspecificacao() {
+		return especificacao;
+	}
+	
+}

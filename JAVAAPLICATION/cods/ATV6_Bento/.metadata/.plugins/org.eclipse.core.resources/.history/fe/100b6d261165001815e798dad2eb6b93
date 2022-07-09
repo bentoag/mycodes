@@ -1,0 +1,48 @@
+package Sistema;
+
+import java.time.LocalDate;
+
+@SuppressWarnings("unused")
+public class Transacao {
+	
+	private LocalDate data;
+	private int nregistro;
+	private boolean situacao;
+	private Cliente beneficiado, contratante;
+	private Funcionario responsavel;
+	private Transacao transacao;
+	
+	public Transacao (Cliente beneficiado, Cliente contratante, Funcionario responsavel, int protocolo, LocalDate data) {
+		
+		this.situacao = false;  
+		
+		this.beneficiado = beneficiado;
+		//this.contratante = contratante;
+		beneficiado.addTransacao(beneficiado);
+				
+		
+		this.responsavel = responsavel;
+		responsavel.addTransacao(responsavel);
+		
+		this.nregistro = protocolo;
+		this.data = data;
+		
+		
+	}
+	
+	public LocalDate getData() {
+		return data;
+	}
+	public int getNregistro() {
+		return nregistro;
+	}
+	public boolean isSituacao() {
+		return situacao;
+	}
+	
+	
+	
+	
+
+
+}

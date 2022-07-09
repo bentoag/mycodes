@@ -1,0 +1,65 @@
+package pi_gamemath;
+
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JLabel;
+
+public class StartFrame extends PrincipalFrame {
+
+	private GridBagLayout layout;
+	private GridBagConstraints constraints;
+	
+	public StartFrame() {
+		super("Inicio");
+		
+		layout = new GridBagLayout();
+		setLayout(layout);
+		constraints = new GridBagConstraints();
+		
+		init();
+	}
+	
+	public void init() {
+		JLabel title;
+		JLabel subtitle;
+		JLabel description;
+		//Titulo GameMath
+		title = new JLabel("  GAMEMATH  ");
+		title.setForeground(Color.ORANGE);
+		addComponent(title, 1, 1, 1, 1);
+		
+		//Seja bem vindo
+		subtitle = new JLabel(" SEJA VEM VINDO! ");
+		subtitle.setForeground(Color.RED);
+		addComponent(subtitle, 2, 1, 1, 1);
+		
+		//tipo de usuario
+		subtitle = new JLabel(" Escolha seu tipo de usuário! ");
+		subtitle.setForeground(Color.BLACK);
+		addComponent(description, 2, 1, 1, 1);
+
+		//Botão entrar
+		JButton entrar = new JButton("ENTRAR");
+		entrar.setBackground(Color.ORANGE);
+		addComponent(entrar, 15, 4, 1, 1);
+		entrar.setAlignmentX(CENTER_ALIGNMENT);
+	}
+	
+	private void addComponent(JComponent comp, int row, int col, int width, int height) {
+		constraints.gridx = col;
+		constraints.gridy = row;
+		constraints.gridwidth = width;
+		constraints.gridheight = height;
+
+		constraints.fill = GridBagConstraints.VERTICAL;		
+		constraints.anchor = GridBagConstraints.NORTH;
+
+		layout.setConstraints(comp, constraints);
+		add(comp);
+	}
+	
+}

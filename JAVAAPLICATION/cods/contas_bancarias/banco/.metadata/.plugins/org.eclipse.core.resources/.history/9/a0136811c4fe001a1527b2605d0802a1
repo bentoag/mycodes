@@ -1,0 +1,10 @@
+package contas_bancarias.bento;
+
+public class ContaPoupanca extends Conta{
+
+	public ContaPoupanca(int numConta, String cliente, double saldoConta) {
+		super(numConta, cliente, saldoConta);
+		
+	}
+
+}

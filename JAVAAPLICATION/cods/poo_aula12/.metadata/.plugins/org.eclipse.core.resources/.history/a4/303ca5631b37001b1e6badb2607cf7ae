@@ -1,0 +1,26 @@
+package view;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.AbstractListModel;
+
+import model.Categoria;
+
+public class CategoriaListModel extends AbstractListModel<Categoria> {
+	
+	private List<Categoria> categorias = new ArrayList<>();
+	@Override
+	public int getSize() {
+		
+		return categorias.size();
+	}
+
+	@Override
+	public Categoria getElementAt(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

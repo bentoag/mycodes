@@ -1,0 +1,55 @@
+package Sistema;
+
+import java.util.ArrayList;
+
+
+
+public final class Cliente extends Pessoa{
+	
+	private TipoCliente cliente;
+	
+	private final ArrayList<Transacao> beneficiados =
+			new ArrayList<>();
+	
+	private final ArrayList<Transacao> contratantes =
+			new ArrayList<>();
+
+	public Cliente(String nome, String CPF, TipoCliente cl) {
+		super(nome, CPF);		
+		this.cliente = cl;
+	}
+
+
+	public TipoCliente getCliente() {
+		return cliente;
+	}
+	
+	public void addTransacao(Transacao beneficiado) {
+		this.beneficiados.add(beneficiado);		
+		
+	}
+//			public void addTransacao(Transacao beneficiado, Transacao contratante) {
+//				this.beneficiados.add(beneficiado);	
+//				this.contratantes.add(contratante);
+//				
+//			}
+	
+	
+	
+	@Override
+	public String toString() {
+		return  ",Nome: " + getNome() + ", CPF="
+				+ getCPF() + "Sr(a). aqui está como,=" + cliente;
+	}
+
+
+	
+
+
+	
+
+
+	
+
+	
+}

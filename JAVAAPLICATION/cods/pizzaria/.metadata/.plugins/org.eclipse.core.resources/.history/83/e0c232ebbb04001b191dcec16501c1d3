@@ -1,0 +1,12 @@
+package pizzaria.bento;
+
+public class Pedidos {
+
+	public static void main(String[] args) {
+		Tamanho grande = Tamanho.GRANDE;
+		
+		Pepperoni pepperoni = new Pepperoni("Bento", grande);
+
+	}
+
+}

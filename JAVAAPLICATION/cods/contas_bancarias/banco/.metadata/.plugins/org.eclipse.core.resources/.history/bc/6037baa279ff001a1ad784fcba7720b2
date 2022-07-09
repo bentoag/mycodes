@@ -1,0 +1,10 @@
+package contas_bancarias.bento;
+
+public class ContaInvestimento extends Conta{
+	
+	private double saldoInvestimento;
+	public ContaInvestimento(int numConta, String cliente, double saldoConta) {
+		super(numConta, cliente, saldoConta);		
+	}
+
+}

@@ -1,0 +1,13 @@
+package livrodenotas.bento;
+
+public class Curso {
+
+	public static void main(String[] args) {			
+		
+		if(args.length == 3) {
+			double [] [] medias;
+		}
+			
+	}
+
+}

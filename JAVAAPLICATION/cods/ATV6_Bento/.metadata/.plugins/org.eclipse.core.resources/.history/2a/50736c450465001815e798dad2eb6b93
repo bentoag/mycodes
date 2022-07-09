@@ -1,0 +1,27 @@
+package Sistema;
+
+
+
+public final class Cliente extends Pessoa{
+	
+	private TipoCliente cliente;
+		
+
+	public Cliente(String nome, String CPF, TipoCliente cl) {
+		super(nome, CPF);		
+		this.cliente = cl;
+	}
+
+
+	public TipoCliente getCliente() {
+		return cliente;
+	}
+
+	@Override
+	public String toString() {
+		return  ",Nome: " + getNome() + ", CPF="
+				+ getCPF() + "Sr(a). aqui está como,=" + cliente;
+	}
+
+	
+}

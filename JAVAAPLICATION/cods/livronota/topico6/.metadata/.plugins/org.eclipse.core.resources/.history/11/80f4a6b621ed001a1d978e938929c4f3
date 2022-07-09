@@ -1,0 +1,39 @@
+package livrodenotas.bento;
+
+import java.util.Scanner;
+
+public class LivroNotas {
+	private String nomeUC;
+	private int numAlunos, numAvaliacoes;
+	double [][] notas = new double [numAlunos][numAvaliacoes];
+	String [] alunos = new String [numAlunos];
+	
+	
+	public LivroNotas (String disciplina, int numAlunos, int numAvaliacoes) {
+		this.nomeUC = disciplina;
+		this.numAlunos = numAlunos;
+		this.numAvaliacoes = numAvaliacoes;
+	}
+
+	public String getNomeUC() {
+		return this.nomeUC;
+	}
+	
+	public void adicionarNota(double nota, int idAluno, int idAvaliacao) {
+		/* 3 notas 3 alunos
+		 * 		id		id		 id		 id
+		 * aluno 0 -> nota 0, nota1, nota2
+		 * aluno 1 -> nota 0, nota1, nota2
+		 * aluno 2 -> nota 0, nota1, nota2
+		 */
+		Scanner input = new Scanner(System.in);		
+		
+		
+		for (int i = 1; i < this.numAlunos; i++) {
+			do {
+				
+			} while (!notaValida);
+		}
+	}
+	
+}

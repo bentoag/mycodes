@@ -1,0 +1,61 @@
+package pi_gamemath;
+
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+import javax.swing.JComponent;
+import javax.swing.JLabel;
+
+public class AdmFrame extends PrincipalFrame {
+	
+	private GridBagLayout layout;
+	private GridBagConstraints constraints;
+	
+	public AdmFrame() {
+		super("Administrador");
+		
+		layout = new GridBagLayout();
+		setLayout(layout);
+		constraints = new GridBagConstraints();
+		
+		init();
+	}
+
+	private void init() {
+		JLabel title;
+		JLabel subtitle;
+		JLabel description;
+		
+		//ADM
+		title = new JLabel("  ADMINISTRADOR, ");
+		title.setForeground(Color.RED);
+		addComponent(title, 1, 1, 1, 1);
+		
+		//Seja bem vindo
+		subtitle = new JLabel(" seja bem vindo ao GameMath! ");
+		subtitle.setForeground(Color.RED);
+		addComponent(subtitle, 2, 1, 1, 1);
+		
+		//o que deseja fazer
+		description = new JLabel(" O que deseja fazer? ");
+		description.setForeground(Color.BLACK);
+		addComponent(description, 3, 1, 1, 1);
+		
+		
+
+	}
+	
+	private void addComponent(JComponent comp, int row, int col, int width, int height) {
+		constraints.gridx = col;
+		constraints.gridy = row;
+		constraints.gridwidth = width;
+		constraints.gridheight = height;
+
+		constraints.fill = GridBagConstraints.VERTICAL;		
+		constraints.anchor = GridBagConstraints.NORTH;
+
+		layout.setConstraints(comp, constraints);
+		add(comp);
+	}
+}

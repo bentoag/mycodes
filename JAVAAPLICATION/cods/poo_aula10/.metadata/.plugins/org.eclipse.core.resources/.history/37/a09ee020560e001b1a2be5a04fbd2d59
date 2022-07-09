@@ -1,0 +1,11 @@
+public class ImproperFraction extends ArithmeticException {
+
+	public ImproperFraction () {
+		super();
+	}
+	
+	public ImproperFraction (String s) {
+		super(s);
+	}
+	
+}

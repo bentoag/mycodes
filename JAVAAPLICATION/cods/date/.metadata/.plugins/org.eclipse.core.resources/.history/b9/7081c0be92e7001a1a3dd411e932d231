@@ -1,0 +1,37 @@
+package exerciciodate.bento;
+
+public class Date {
+	private int mes, dia, ano;
+
+	public Date(int mes, int dia, int ano) {
+		if (mes > 0 && mes < 13) {
+			if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
+				if (dia > 0 && dia < 32) {
+					this.ano = ano;
+					this.dia = dia;
+					this.mes = mes;
+				}
+			} else if (((ano % 4) == 0 && (ano % 100) != 0) && mes == 2) {
+				if (dia > 0 && dia <= 29) {
+					this.ano = ano;
+					this.dia = dia;
+					this.mes = mes;
+				}
+			} else if (mes == 2) {
+				if (dia > 0 && dia <= 28) {
+					this.ano = ano;
+					this.dia = dia;
+					this.mes = mes;
+				}
+			} else {
+				if (dia > 0 && dia <= 30) {
+					this.ano = ano;
+					this.dia = dia;
+					this.mes = mes;
+				}
+			}
+		} else {
+			System.out.println("Mês inválido");
+		}
+	}
+}

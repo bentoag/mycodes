@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\BackupDrive\TADS SENAI\2SEM\POO\Exercicios\vendascomissoes\.metadata\.plugins\org.eclipse.jdt.core
+1248545562.index
+866059611.index

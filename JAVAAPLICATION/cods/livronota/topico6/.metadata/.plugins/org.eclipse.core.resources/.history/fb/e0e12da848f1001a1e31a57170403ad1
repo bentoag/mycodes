@@ -1,0 +1,18 @@
+package livrodenotas.bento;
+
+public class Curso {
+
+	public static void main(String[] args) {			
+		
+		if(args.length == 3) {
+			double [] [] medias;
+			medias = new double [Integer.parseInt(args[1])][1];
+			
+			Tela.boasVindas();
+			
+			LivroNotas caderno = new LivroNotas(args[0], (int) args[1], (int) args[2])
+		}
+			
+	}
+
+}

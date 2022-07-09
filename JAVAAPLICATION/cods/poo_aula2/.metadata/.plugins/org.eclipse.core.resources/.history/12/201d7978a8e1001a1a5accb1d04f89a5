@@ -1,0 +1,9 @@
+package bento.poo.empregado;
+
+public class Empregado {
+	
+	private String nome, sobrenome;
+	private double salario;
+	
+	
+}

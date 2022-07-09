@@ -1,0 +1,35 @@
+package calculadoracardiaca.bento;
+
+import java.util.Scanner;
+
+public class MinhaFrequencia {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Digite seu nome:  ");
+		String nome = input.nextLine();
+		System.out.print("Digite seu sobrenome:  ");
+		String sobrenome = input.nextLine();
+		System.out.print("Digite o dia que você nasceu:  ");
+		int dia = input.nextInt();
+		System.out.print("Digite o mês que você nasceu:  ");
+		int mes = input.nextInt();
+		System.out.print("Digite o ano que você nasceu:  ");
+		int ano = input.nextInt();
+		
+		HeartRates bento = new HeartRates(nome, sobrenome, dia, mes, ano);
+		
+		System.out.println("**** MINHAS INFORMAÇÕES ****");
+		System.out.printf("%s %s %s %n%s %d %s","Bem vindo : ", bento.getNome(), bento.getSobrenome(), "Você tem:  ", bento.calculaIdade(), " anos.");
+		System.out.printf("%n%s %d %s", "Sua Frequência Cardíaca Máxima deve ser: ", bento.frequenciaCardioMax(), " bt/min");
+		
+		
+		
+		
+		input.close();
+
+
+	}
+
+}

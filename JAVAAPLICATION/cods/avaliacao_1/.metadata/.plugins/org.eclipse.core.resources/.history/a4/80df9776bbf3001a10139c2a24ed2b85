@@ -1,0 +1,16 @@
+/*
+ * Loteria.java
+ *
+ * Classe que executa o programa e verifica o vencedor.
+ */
+
+public class Loteria {
+    private static final int QTDE_DEZENAS = 6;
+    private static final int MENOR_DEZENA = 1;
+    private static final int MAIOR_DEZENA = 60;
+
+    public static void main(String[] args) {
+	// Implemente este método
+    } // fim do método main
+    
+} // fim da classe Loteria

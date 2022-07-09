@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="pizzaria.bento.Pepperoni"/>
+    <fullyQualifiedTypeName name="pizzaria.bento.Tamanho"/>
+    <fullyQualifiedTypeName name="pizzaria.bento.Margherita"/>
+    <fullyQualifiedTypeName name="pizzaria.bento.Mussarela"/>
+    <fullyQualifiedTypeName name="pizzaria.bento.Portuguesa"/>
+</qualifiedTypeNameHistroy>

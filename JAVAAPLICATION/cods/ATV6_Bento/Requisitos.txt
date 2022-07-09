@@ -1,0 +1,48 @@
+
+Sistema Imobiliário para Registro de Imóveis:
+================================================
+
+Deve Permitir:
+
+1. Cadastrar e Buscar Imóveis:
+
+- Apartamento
+- Casa
+- Sala Comercial
+- Terreno
+
+2. Cadastrar e Buscar Pessoas: Cliente e Funcionario
+
+	2.1 Funcionarios são:
+		Gerente
+		Corretor
+		Contador
+
+	2.2 Clientes são:
+		Locador
+		Locatario
+		Comprador
+		Vendedor
+	
+3. Coletar Informações (get)
+
+- nº quartos
+- nº garagem
+- área total
+- valor
+
+
+4. Todos os imóveis tem:
+--> Código, área, endereço, valor e uma finalidade.
+
+Finalidade pode ser: Compra
+		     Venda
+		     Permuta
+
+5. Todas as pessoas tem:
+
+Nome, CPF e endereço.
+
+================================================
+
+

@@ -1,0 +1,6 @@
+public class ImproperFraction extends ArithmeticException {
+
+	public ImproperFraction () {
+		super();
+	}
+}

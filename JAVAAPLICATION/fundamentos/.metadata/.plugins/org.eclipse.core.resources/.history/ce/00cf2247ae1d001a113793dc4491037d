@@ -1,0 +1,34 @@
+package bento.fundamentosjava.main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		/* Parte 1
+		System.out.println("Olá, mundo!");
+		System.out.print("Olá, mundo de novo. \n"); // \n é um metacarecter
+		System.out.print("Olá, mundo mais uma vez");
+		 												*/
+		
+		/* Parte 2
+		Scanner variavel = new Scanner (System.in);		
+		System.out.print("Digite seu nome: ");
+		String nome = variavel.nextLine();
+		System.out.println(nome);
+		variavel.close();  */
+		
+		
+		//Parte 3 - Calculadora	
+		Scanner variavel = new Scanner (System.in);
+		System.out.print("Digite o primeiro nº:  ");
+		int num1 = Integer.parseInt(variavel.nextLine());
+		System.out.println(num1);
+		
+		
+		
+
+	}
+
+}

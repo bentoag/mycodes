@@ -1,0 +1,8 @@
+package gerenciador.bento;
+
+public class Tarefa {
+
+	public Tarefa () {
+		
+	}
+}

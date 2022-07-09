@@ -1,0 +1,25 @@
+package pizzaria.bento;
+
+public class Pepperoni extends Pizza {
+
+	private final int NUMINGREDIENTES = 5;
+	public Pepperoni(String nome, Tamanho tamanho) {
+		super(nome, tamanho);		
+	}
+
+	@Override
+	public void fazerPedido(String nome, Tamanho tamanho) {		
+		
+	}
+
+	@Override
+	public void preparar() {		
+		
+	}
+
+	@Override
+	public void assar() {		
+		
+	}
+
+}

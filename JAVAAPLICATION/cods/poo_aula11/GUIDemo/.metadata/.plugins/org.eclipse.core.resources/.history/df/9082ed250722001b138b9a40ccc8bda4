@@ -1,0 +1,9 @@
+package pi_gamemath;
+import java.awt.*;
+
+import javax.swing.*;
+import javax.swing.text.Document;
+
+public class PlaceholderTextField extends JTextField {
+
+}

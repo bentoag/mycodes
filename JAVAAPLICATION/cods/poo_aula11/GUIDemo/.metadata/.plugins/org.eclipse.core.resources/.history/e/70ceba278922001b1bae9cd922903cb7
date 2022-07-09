@@ -1,0 +1,25 @@
+package pi_gamemath;
+
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+public class AdmFrame extends PrincipalFrame {
+	
+	private GridBagLayout layout;
+	private GridBagConstraints constraints;
+	
+	public AdmFrame() {
+		super("Administrador");
+		
+		layout = new GridBagLayout();
+		setLayout(layout);
+		constraints = new GridBagConstraints();
+		
+		init();
+	}
+
+	private void init() {
+		
+		
+	}
+}

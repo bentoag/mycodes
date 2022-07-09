@@ -1,0 +1,60 @@
+package gerenciador.bento;
+
+public class Data {
+	private int dia, ano;
+	private Mes mes;
+
+	public int getAno() {
+		return this.ano;
+	}
+
+	public void setAno(int ano) {
+		int year = (ano > 0)? ano : 0;
+		this.ano = year;
+	}
+
+	public String getMes() {
+				//pegando valor relacionado ao mes do Enum
+		return mes.getMes();
+	}
+
+	public void setMes(Mes mes) {		
+		this.mes = mes;
+	}
+	public int getDia() {		
+		return this.dia;
+	}
+
+	public void setDia(int dia) {
+		int day = 0;
+		int nDias = Mes.getDiasDoMes();
+		if(dia >= 1 && dia <= nDias) {
+			day = dia;
+		}else{
+			if(mes == Mes.FEVEREIRO && dia == 29) {
+				if(((getAno() % 400) == 0) || ((getAno() % 4) == 0 && ((getAno() % 100) != 0))){
+					day=29;
+				}
+			}
+		}	
+		
+		this.dia = day;
+	}	
+	
+		
+	//construtores
+	public Data(int dia, Mes mes, int ano) {
+		setAno(ano);
+		setDia(dia);
+		setMes(mes);
+	}
+	
+	public Data () {};
+	
+	public String toString() {
+		return String.format("%02d:%02d:%04d", getDia(), getMes(), getAno());
+	}
+	
+	
+
+}

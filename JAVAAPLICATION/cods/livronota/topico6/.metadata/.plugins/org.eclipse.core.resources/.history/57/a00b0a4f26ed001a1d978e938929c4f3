@@ -1,0 +1,8 @@
+package livrodenotas.bento;
+
+public class Tela {
+
+	public void boasVindas() {
+		System.out.println("Bem vindo a execução do Programa Livro de Notas.!");
+	}
+}

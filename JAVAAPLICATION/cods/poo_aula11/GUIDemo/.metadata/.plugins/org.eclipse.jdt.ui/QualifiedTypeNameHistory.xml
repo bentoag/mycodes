@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="pi_gamemath.PrincipalFrame"/>
+    <fullyQualifiedTypeName name="pi_gamemath.LoginFrame"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextField"/>
+    <fullyQualifiedTypeName name="pi_gamemath.JPlaceholderTextField"/>
+    <fullyQualifiedTypeName name="javax.management.ObjectName"/>
+    <fullyQualifiedTypeName name="javax.swing.text.JTextComponent"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="pi_gamemath.StartFrame"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="pi_gamemath.AdmFrame"/>
+    <fullyQualifiedTypeName name="pi_gamemath.PlaceholderTextField"/>
+    <fullyQualifiedTypeName name="pi_gamemath.PlayerFrame"/>
+</qualifiedTypeNameHistroy>

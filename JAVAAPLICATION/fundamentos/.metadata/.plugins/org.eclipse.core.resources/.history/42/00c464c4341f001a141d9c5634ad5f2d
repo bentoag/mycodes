@@ -1,0 +1,20 @@
+package bento.testesjava.classes;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner num = new Scanner(System.in);
+		int n = num.nextInt();
+		
+		for(int i=0; i<=10; i++) {
+			System.out.println("%d x %d = %d",n, i, n*i);
+		}
+		
+		num.close();
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package contas_bancarias.bento;
+
+public class ContaPoupanca extends Conta{
+
+	public ContaPoupanca(int numConta, String cliente, double saldoConta) {
+		super(numConta, cliente, saldoConta);
+		
+	}
+	
+	@Override
+	public double getSaldo() {
+		return super.getSaldo();
+	}
+
+	void aplicarRendimento() {
+		double saldo = getSaldo();
+		double rendimento = 0;
+		rendimento += saldo*0,25;
+	}
+}

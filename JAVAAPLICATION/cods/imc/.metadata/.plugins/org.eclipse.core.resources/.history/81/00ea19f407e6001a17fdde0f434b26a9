@@ -1,0 +1,17 @@
+package calculadoraimc.bento.cod;
+
+/*
+ * Calculadora de Indice de Massa Corporal
+ * Peso  em quilogramas
+ * Altura em metros
+ */
+public class CalculadoraIMC {
+	private float altura, peso;
+	
+	public CalculadoraIMC (float peso, float altura) {
+		this.peso = peso;
+		this.altura = altura;
+	}
+	
+	
+}

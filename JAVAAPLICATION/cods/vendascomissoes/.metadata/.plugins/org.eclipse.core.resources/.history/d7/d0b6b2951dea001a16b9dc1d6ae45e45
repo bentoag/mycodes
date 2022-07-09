@@ -1,0 +1,29 @@
+package calculandovendasecomissoes.bento;
+
+import java.util.Scanner;
+
+public class Loja {
+
+	public static void main(String[] args) {
+		boolean validaProduto = true;
+		
+		Scanner input = new Scanner(System.in);		
+		System.out.print("Digite o nome do vendedor:  ");
+		String nome = input.nextLine();
+		
+		Vendedor vendedor1 = new Vendedor("Bento Gonzaga");
+		
+		do {
+			System.out.println("Informe o produto vendido: ");
+			int produto = input.nextInt();
+			
+			if(produto <= 0 || produto > 5) {
+				validaProduto = false;
+			}
+			
+		} while (!validaProduto);
+		
+
+	}
+
+}

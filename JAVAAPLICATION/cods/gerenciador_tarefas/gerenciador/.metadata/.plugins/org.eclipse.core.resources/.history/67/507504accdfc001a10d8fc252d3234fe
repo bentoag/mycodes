@@ -1,0 +1,43 @@
+package gerenciador.bento;
+
+public enum Mes {
+
+	JANEIRO("Janeiro"), FEVEREIRO("Fevereiro"), MARCO("Março"),
+	ABRIL("Abril"), MAIO ("Maio"), JUNHO("Junho"), JULHO("Julho"),
+	AGOSTO("Agosto"), SETEMBRO("Setembro"), OUTUBRO("Outubro"),
+	NOVEMBRO ("Novembro"), DEZEMBRO("Dezembro");
+	
+	private String mes;
+	private Data data = new Data();	
+	
+	private Mes(String valor) {
+		this.mes = valor;
+	}
+	
+	public void QtdDias() {
+		
+		int ano = data.getAno();
+		
+		if(mes == "Fevereiro") {
+			if(((ano % 400) == 0) || ((ano % 4) == 0 && ((ano % 100) != 0))){
+				data.setQtdDiasDoMes(29);
+			}else {				
+				data.setQtdDiasDoMes(28);
+			}
+		}else if(mes.equals(ABRIL) || mes.equals(JUNHO) || mes.equals(SETEMBRO) || mes.equals(NOVEMBRO)) {
+			data.setQtdDiasDoMes(30);
+		}else {
+			data.setQtdDiasDoMes(31);
+		}	
+			
+	}		
+	
+	public String getMes() {
+		return this.mes;
+	}
+	
+
+	public String toString() {
+		return String.format("%s", getMes());
+	}
+}

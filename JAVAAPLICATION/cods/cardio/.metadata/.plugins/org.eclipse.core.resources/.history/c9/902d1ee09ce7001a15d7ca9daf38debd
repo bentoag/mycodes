@@ -1,0 +1,29 @@
+package calculadoracardiaca.bento;
+
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class HeartRates {
+	private String nome, sobrenome;
+	private int diaNasc, mesNasc, anoNasc, idade;
+	private Date dataNasc;
+	
+	GregorianCalendar agora = new GregorianCalendar();
+		
+	
+	public HeartRates (String nome, String sobrenome, int dia, int mes, int ano) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.diaNasc = dia;
+		this.mesNasc = mes;
+		this.anoNasc = ano;		
+		
+	}
+	
+	public int calcularIdade(Date dataNasc) {
+		
+		dataNasc = new Date(this.ano, this.mes, this.dia);
+		
+	}
+}
+

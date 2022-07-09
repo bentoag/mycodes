@@ -1,0 +1,52 @@
+package contas_bancarias.bento;
+
+public class ContaPoupanca extends Conta{
+	
+	private double saldoPoupanca;
+
+	public ContaPoupanca(int numConta, String cliente, double saldoConta) {
+		super(numConta, cliente);
+		setSaldoPoupanca(saldoConta);
+	}
+	
+	public double getSaldoPoupanca() {
+		return saldoPoupanca;
+	}
+
+
+
+	public void setSaldoPoupanca(double saldoPoupanca) {
+		this.saldoPoupanca = saldoPoupanca;
+	}
+
+	void aplicarRendimento() {
+		this.saldoPoupanca += this.saldoPoupanca*0.25;
+		
+	}
+	@Override
+	void depositar(int nConta, double valor) {
+		if(this.NUMCONTA == nConta) {
+			this.saldo += (valor > 0)? valor :  0;
+		}else{
+			System.out.println("Conta inválida.");
+		}		
+	}
+	@Override
+	void sacar(int nConta, double valor) {		
+		if(this.NUMCONTA == nConta) {
+			if(this.saldo >= valor) {
+				this.saldo -= valor;
+			}else{
+				System.out.println("Saldo insuficiente: ");			
+			}
+		}else {
+			System.out.println("Conta inválida.");
+		}		
+	}
+	@Override
+	public String toString() {
+		return String.format("%s %d %n%s%s %n%s%.2f","Nº Conta: ",getNumDaConta(),"Cliente: ",  getCliente(), "Saldo : R$ ", getSaldoPoupanca());
+	}
+
+
+}

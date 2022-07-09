@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="pizzaria.bento.Pepperoni"/>
+    <fullyQualifiedTypeName name="pizzaria.bento.Portuguesa"/>
+    <fullyQualifiedTypeName name="pizzaria.bento.Pedidos"/>
+    <fullyQualifiedTypeName name="bento.PagarContas"/>
+    <fullyQualifiedTypeName name="bento.FuncionarioAssalariado"/>
+    <fullyQualifiedTypeName name="bento.FuncionarioComissionado"/>
+    <fullyQualifiedTypeName name="bento.FuncionarioHorista"/>
+    <fullyQualifiedTypeName name="bento.Fatura"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package baralho.bento;
+
+public enum Face {
+
+}

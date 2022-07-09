@@ -1,0 +1,5 @@
+package Sistema;
+
+public abstract class Pessoa {
+
+}

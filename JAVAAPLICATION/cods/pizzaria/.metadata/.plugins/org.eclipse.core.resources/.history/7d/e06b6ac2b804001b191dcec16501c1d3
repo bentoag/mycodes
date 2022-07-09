@@ -1,0 +1,5 @@
+package pizzaria.bento;
+
+public class Pepperoni extends Pizza {
+
+}

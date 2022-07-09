@@ -1,0 +1,31 @@
+package healthprofile.bento;
+
+import java.util.Scanner;
+
+public class MyProfile {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Digite seu nome:  ");
+		String nome = input.nextLine();
+		System.out.print("Digite seu sobrenome:  ");
+		String sobrenome = input.nextLine();
+		System.out.print("Digite o dia que você nasceu:  ");
+		int dia = input.nextInt();
+		System.out.print("Digite o mês que você nasceu:  ");
+		int mes = input.nextInt();
+		System.out.print("Digite o ano que você nasceu:  ");
+		int ano = input.nextInt();
+		System.out.print("Digite a sua altura (em metros):  ");
+		float altura = input.nextFloat();
+		System.out.print("Digite o seu peso (em quilogramas):  ");
+		float peso = input.nextFloat();
+		
+		HealthProfile myprofile = new HealthProfile(nome, sobrenome, dia, mes, ano, peso, altura);
+		
+		input.close();
+
+	}
+
+}

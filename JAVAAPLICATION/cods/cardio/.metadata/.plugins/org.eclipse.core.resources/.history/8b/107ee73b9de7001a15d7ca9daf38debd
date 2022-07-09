@@ -1,0 +1,19 @@
+package calculadoracardiaca.bento;
+
+public class HeartRates {
+	private String nome, sobrenome;		
+	private int diaNasc, mesNasc, anoNasc;
+		
+	
+	public HeartRates (String nome, String sobrenome, int dia, int mes, int ano) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.diaNasc = dia;
+		this.mesNasc = mes;
+		this.anoNasc = ano;		
+		
+	}
+	
+	
+}
+

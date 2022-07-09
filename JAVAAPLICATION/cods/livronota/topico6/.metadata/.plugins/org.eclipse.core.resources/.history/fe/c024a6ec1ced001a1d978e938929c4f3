@@ -1,0 +1,9 @@
+package livrodenotas.bento;
+
+public class LivroNotas {
+	private String nome;
+	
+	public LivroNotas (String nome) {
+		this.nome = nome;
+	}
+}

@@ -1,0 +1,9 @@
+package pizzaria.bento;
+
+public class Pepperoni extends Pizza {
+
+	public Pepperoni(String nome, Tamanho tamanho) {
+		super(nome, tamanho);		
+	}
+
+}

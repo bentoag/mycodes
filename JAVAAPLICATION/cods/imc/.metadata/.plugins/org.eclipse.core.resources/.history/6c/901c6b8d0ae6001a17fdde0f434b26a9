@@ -1,0 +1,19 @@
+package calculadoraimc.bento.cod;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Informe o seu peso (em quilogramas):  ");
+		float peso = input.nextFloat();
+		System.out.print ("Informe a sua altura (em metros):  ");
+		float altura = input.nextFloat();
+		CalculadoraIMC meuIndice = new CalculadoraIMC();
+		meuIndice.calcularIMC(peso, altura);
+
+	}
+
+}

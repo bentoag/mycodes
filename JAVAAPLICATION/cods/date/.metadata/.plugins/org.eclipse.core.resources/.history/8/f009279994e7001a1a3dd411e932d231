@@ -1,0 +1,18 @@
+package exerciciodate.bento;
+
+import java.util.Scanner;
+
+public class DateTest {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Forneça um mês:  ");
+		int mes = input.nextInt();
+		System.out.print("Forneça um dia:  ");
+		int dia = input.nextInt();
+		System.out.print("Forneça um ano:  ");
+		int ano = input.nextInt();
+		
+	}
+}

@@ -1,0 +1,95 @@
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner variavel = new Scanner(System.in);
+
+		int acao = 1; // 0-sair; 1- operacao; 2-historico
+		ArrayList<String> historico = new ArrayList<String>();
+
+		while (acao > 0) {
+
+			if (acao == 1) {
+
+				System.out.println("####### OPERAÇÃO MATEMÁTICA ####### \n");
+				System.out.print("Digite o primeiro nº:  ");
+				int num1 = 0;
+
+				try {
+					num1 = variavel.nextInt();
+				} catch (InputMismatchException e) {
+					System.out.println(String.format(
+							" Ocorreu um erro de formato: %s.\n O primeiro nº assumirá valor 1. \n", e.getMessage()));
+					variavel.nextLine();
+					num1 = 1;
+				} catch (Exception e) {
+					System.out.println(" Erro desconhecido! ");
+				}
+
+				System.out.print("Qual a operação para realizar:  ");
+				char operacao = variavel.next().charAt(0);
+				
+				System.out.print("Digite o segundo nº:  ");
+				int num2 = 0;
+				
+				try {
+					num2 = variavel.nextInt();
+				} catch (InputMismatchException e) {
+					System.out.println(String.format(
+							" Ocorreu um erro de formato: %s.\n O primeiro nº assumirá valor 1. \n", e.getMessage()));
+					variavel.nextLine();
+					num2 = 1;
+				} catch (Exception e) {
+					System.out.println(" Erro desconhecido! ");
+				}
+
+				int resultado = 0;
+
+				switch (operacao) {
+				case '+':
+					resultado = num1 + num2;
+					break;
+				case '-':
+					resultado = num1 - num2;
+					break;
+				case '*':
+					resultado = num1 * num2;
+					break;
+				case '/':
+					resultado = num1 / num2;
+					break;
+				default:
+					System.out.println("Operação Inválida!");
+					break;
+				}
+
+				String entradadohistorico = String.format("%d %c %d = %d", num1, operacao, num2, resultado);
+				historico.add(entradadohistorico);
+				System.out.println(entradadohistorico);
+			} else if (acao == 2) {
+				System.out.println(" === Histórico de operações === ");
+				System.out.println(String.format(" Você já fez %d operações: ", historico.size()));
+
+				historico.forEach(itemHistorico -> System.out.println(itemHistorico)); // expressao lambida
+
+//				for (int i = 0; i < historico.size(); i++) {
+//					System.out.println(historico.get(i));
+//				}
+			}
+
+			System.out.println(" O que você deseja fazer?"); // atalho sysout
+			System.out.println(" 1 Para: Nova operação matemática: ");
+			System.out.println(" 2 Para: Visualizar histórico: ");
+			System.out.println(" 0 Para: Sair ");
+			System.out.print("Sua opção: ");
+			acao = variavel.nextInt();
+		}
+
+		variavel.close();
+
+	}
+}

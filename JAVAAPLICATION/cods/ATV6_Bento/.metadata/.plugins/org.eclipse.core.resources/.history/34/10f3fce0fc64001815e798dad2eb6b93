@@ -1,0 +1,13 @@
+package Sistema;
+
+public class Funcionario extends Pessoa {
+
+	private final int CRECI, cod;
+	private final TipoFuncionario cargo;
+	
+	protected Funcionario(String nome, String CPF) {
+		super(nome, CPF);
+		
+	}
+
+}

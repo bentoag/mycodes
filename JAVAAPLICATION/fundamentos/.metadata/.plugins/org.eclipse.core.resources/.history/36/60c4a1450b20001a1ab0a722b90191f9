@@ -1,0 +1,22 @@
+package bento.testesjava.classes;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//Exercicio Tabuada
+		Scanner num = new Scanner(System.in);
+		System.out.println("Digite um n: ");
+		int n = num.nextInt();
+		
+		for(int i=0; i<=10; i++) {
+			System.out.println(String.format("%d x %d = %d", n, i, n*i));
+		}
+		
+		num.close();
+		
+	}
+
+}
